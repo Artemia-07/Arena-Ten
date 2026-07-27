@@ -25,7 +25,7 @@
   --gold-glow:rgba(212,175,55,0.35);
   --blue-accent:#3d8bfd;
   --purple-accent:#8b6bb8;
-  --red:#c0392b;
+  --flag-red:#E4002B;
   --a:#2ecc71;
   --b:#f0cc5a;
   --c:#e67e22;
@@ -54,13 +54,13 @@ body::before{
 .display{font-family:'Cinzel',serif; text-transform:uppercase; letter-spacing:0.04em;}
 .label{font-family:'Nunito Sans',sans-serif; font-size:0.72rem; font-weight:700; letter-spacing:0.12em; text-transform:uppercase;}
 a{color:inherit; text-decoration:none;}
-::selection{background:var(--gold); color:#1a1208;}
+::selection{background:var(--gold); color:#fff;}
 
 .nav{
   position:sticky; top:0; z-index:50;
   display:flex; align-items:center; justify-content:space-between;
   padding:16px 5vw;
-  background:linear-gradient(180deg, rgba(10,22,40,0.97), rgba(10,22,40,0.88));
+  background:linear-gradient(180deg, rgba(18,9,9,0.97), rgba(18,9,9,0.88));
   backdrop-filter:blur(10px);
   border-bottom:1px solid var(--line-strong);
   box-shadow:0 4px 24px rgba(0,0,0,0.35);
@@ -72,12 +72,14 @@ a{color:inherit; text-decoration:none;}
   clip-path:polygon(50% 0%, 92% 16%, 92% 58%, 50% 100%, 8% 58%, 8% 16%);
   box-shadow:0 0 14px var(--gold-glow);
   position:relative;
+  border:1px solid rgba(0,0,0,0.25);
 }
 .nav .logo .shield::after{
   content:"10"; position:absolute; inset:0;
   display:flex; align-items:center; justify-content:center;
   font-family:'Cinzel',serif; font-size:0.62rem; font-weight:800; color:#1a1208;
   padding-top:4px;
+  text-shadow:0 1px 2px rgba(255,255,255,0.4);
 }
 .nav .logo b{display:block; letter-spacing:0.06em; color:var(--gold-light); text-shadow:0 0 20px var(--gold-glow);}
 .nav .logo small{display:block; font-family:'Nunito Sans',sans-serif; text-transform:uppercase; letter-spacing:0.14em; font-size:0.58rem; color:var(--cream-dim); font-weight:700;}
@@ -110,7 +112,7 @@ main{position:relative; z-index:1; max-width:1120px; margin:0 auto; padding:0 5v
   text-shadow:0 2px 24px rgba(212,175,55,0.15);
 }
 .hero h1 .gold{
-  background:linear-gradient(180deg, #fff8e0, var(--gold-light) 40%, var(--gold));
+  background:linear-gradient(180deg, var(--flag-red) 0%, var(--flag-red) 48%, #ffffff 52%, #ffffff 100%);
   -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text;
 }
 .hero p{max-width:660px; color:var(--cream-dim); font-size:1.02rem; line-height:1.7;}
@@ -150,7 +152,7 @@ main{position:relative; z-index:1; max-width:1120px; margin:0 auto; padding:0 5v
 .list-head{display:flex; justify-content:center; align-items:center; margin:52px 0 22px;}
 .list-head h2{
   font-family:'Cinzel',serif; font-size:0.95rem; margin:0;
-  color:var(--gold-light); font-weight:700; letter-spacing:0.12em;
+  color:var(--cream); font-weight:700; letter-spacing:0.12em;
   padding:0 24px; position:relative; text-align:center;
 }
 .list-head h2::before,.list-head h2::after{
@@ -185,7 +187,7 @@ main{position:relative; z-index:1; max-width:1120px; margin:0 auto; padding:0 5v
 .rank-badge{
   width:48px; height:54px;
   display:flex; align-items:center; justify-content:center;
-  background:linear-gradient(180deg, rgba(30,50,75,0.95), rgba(15,28,45,0.98));
+  background:linear-gradient(180deg, rgba(35,20,20,0.95), rgba(18,10,10,0.98));
   border:2px solid var(--team, var(--gold));
   clip-path:polygon(50% 0%, 100% 15%, 100% 70%, 50% 100%, 0% 70%, 0% 15%);
   box-shadow:0 0 14px color-mix(in srgb, var(--team, var(--gold)) 25%, transparent);
@@ -204,7 +206,7 @@ main{position:relative; z-index:1; max-width:1120px; margin:0 auto; padding:0 5v
   font-family:'Cinzel',serif; font-size:0.95rem; font-weight:800;
   min-width:44px; height:44px; padding:0 6px;
   display:flex; align-items:center; justify-content:center;
-  background:linear-gradient(180deg, rgba(20,35,55,0.9), rgba(10,20,35,0.95));
+  background:linear-gradient(180deg, rgba(30,17,17,0.9), rgba(15,8,8,0.95));
   border:2px solid var(--grade-color,var(--b));
   color:var(--grade-color,var(--b));
   flex-shrink:0;
@@ -257,7 +259,7 @@ main{position:relative; z-index:1; max-width:1120px; margin:0 auto; padding:0 5v
   border:1px solid var(--line-strong);
   overflow:hidden;
   background:
-    linear-gradient(135deg, color-mix(in srgb, var(--team,var(--gold)) 35%, #0a1628) 0%, rgba(10,22,40,0.95) 55%, #0f1f35 100%);
+    linear-gradient(135deg, color-mix(in srgb, var(--team,var(--gold)) 35%, #120909) 0%, rgba(18,9,9,0.95) 55%, #170d0d 100%);
   box-shadow:0 8px 32px rgba(0,0,0,0.35), inset 0 1px 0 rgba(255,255,255,0.06);
 }
 .p-hero::before{
@@ -291,7 +293,7 @@ main{position:relative; z-index:1; max-width:1120px; margin:0 auto; padding:0 5v
   background:var(--panel);
 }
 .report-card .cell{
-  background:rgba(15,28,45,0.85);
+  background:rgba(18,9,9,0.85);
   padding:22px 14px; text-align:center;
   border-right:1px solid var(--line);
 }
@@ -330,7 +332,7 @@ main{position:relative; z-index:1; max-width:1120px; margin:0 auto; padding:0 5v
 .bar-row{display:grid; grid-template-columns:130px 1fr 50px; align-items:center; gap:14px; margin-bottom:16px;}
 .bar-row .lbl{font-size:0.82rem; color:var(--cream-dim); font-weight:600;}
 .bar-track{
-  height:12px; background:rgba(10,22,40,0.8); overflow:hidden;
+  height:12px; background:rgba(18,9,9,0.8); overflow:hidden;
   border:1px solid var(--line); border-radius:2px;
   box-shadow:inset 0 2px 4px rgba(0,0,0,0.3);
 }
@@ -438,15 +440,15 @@ const PLAYERS = [
   slug:"butss", rank:5, name:"Butss", team:"ONIC Esports", pos:"EXP Laner / Captain",
   color:"#FFD200",
   hook:"ONIC's captain and the exp-lane anchor of the league's first three-peat — five MPL ID titles, an MSC championship, and the leadership that held the dynasty core together through four consecutive seasons of dominance.",
-  grades:{domestic:"A+", international:"B+", longevity:"A-", individual:"B+", overall:"A"},
-  stats:[["Title dominance","94%"],["Leadership & captaincy","92%"],["International results","85%"]],
+  grades:{domestic:"A", international:"B+", longevity:"A-", individual:"B+", overall:"A"},
+  stats:[["Title dominance","93%"],["Leadership & captaincy","90%"],["International results","82%"]],
   statBoxes:[["5","MPL ID titles"],["S10–S12","Three-peat captain"],["Reg. MVP","Season 8"],["MSC '23","Champion"]],
   narrative:[
-    "Butss joined ONIC in mid-2020 after a brief, frustrating stint on EVOS's bench — and within a season he'd won Most Improved Player at Season 6. By Season 8 he was the team's captain and Regular Season MVP, leading ONIC to its first title in years and laying the foundation for everything that came after.",
-    "When Kairi arrived and ONIC unlocked its four-peat core in Seasons 10 through 13, Butss was the veteran constant on the exp lane — the first player in MPL Indonesia history to win three consecutive domestic titles (S10–S12), part of the roster that also lifted MSC 2023 and back-to-back MPL Invitational titles.",
-    "His game isn't built on highlight-reel mechanics the way Kairi's is — it's built on map pressure, disciplined laning, and the kind of in-game leadership that keeps a dynasty roster aligned when the stakes are highest. Five MPL ID titles, international hardware, and captaincy through ONIC's greatest era make him the clear fifth name on this list."
+    "Butss joined ONIC around Season 6, and within that season had already won Most Improved Player — the first sign of the steady, disciplined exp-lane game that would define his career. By Season 8 he was the team's captain and Regular Season MVP, closing that season with 85 MVP points, comfortably clear of the field, on the way to an MPL ID title.",
+    "When Kairi arrived and ONIC unlocked its four-peat core in Seasons 10 through 13, Butss was the veteran constant on the exp lane — the first player in MPL Indonesia history to win three consecutive domestic titles (S10–S12), part of the roster that also lifted MSC 2023 alongside CW, Sanz, and Kiboy.",
+    "His game isn't built on highlight-reel mechanics the way Kairi's is — it's built on map pressure, disciplined laning, and the kind of in-game leadership that keeps a dynasty roster aligned when the stakes are highest. Five MPL ID titles, an MSC championship, and captaincy through ONIC's greatest era make him the clear fifth name on this list."
   ],
-  achievements:["5x MPL Indonesia Champion (S8, S10–S13)","First player to win MPL Indonesia three-peat (S10–S12) as captain","MPL Indonesia Regular Season MVP (S8)","MPL Indonesia Most Improved Player (S6)","MSC 2023 Champion","2x MPL Invitational Champion (2021, 2022)","M5 World Championship Runner-up"]
+  achievements:["5x MPL Indonesia Champion (S8, S10–S13)","First player to win MPL Indonesia three-peat (S10–S12) as captain","MPL Indonesia Regular Season MVP (S8, 85 MVP points)","MPL Indonesia Most Improved Player (S6)","MSC 2023 Champion"]
 },
 {
   slug:"lemon", rank:6, name:"Lemon", team:"RRQ Hoshi", pos:"Mid Laner",
@@ -465,16 +467,16 @@ const PLAYERS = [
 {
   slug:"oura", rank:7, name:"Oura", team:"EVOS Legends", pos:"EXP Laner",
   color:"#1E6FFF",
-  hook:"The individual face of Indonesia's only M-Series World Championship. Oura's Finals MVP performance at M1 2019 remains one of the signature moments in MPL Indonesia history.",
-  grades:{domestic:"B", international:"A+", longevity:"B", individual:"A", overall:"A-"},
-  stats:[["World Championship impact","98%"],["Domestic title output","78%"],["Legacy weight","93%"]],
-  statBoxes:[["M1 2019","World Champion"],["Finals MVP","M1 World Championship"],["2","MPL ID titles"],["EVOS 'WORLD'","Roster"]],
+  hook:"\"The Father of Assassins.\" Two runner-up finishes as a rookie, a quiet Season 3, then a Season 4 breakthrough that led straight to Indonesia's only M-Series World Championship — and the Finals MVP trophy that came with it.",
+  grades:{domestic:"C+", international:"A+", longevity:"B", individual:"A", overall:"B+"},
+  stats:[["World Championship impact","98%"],["Domestic title output","62%"],["Legacy weight","93%"]],
+  statBoxes:[["M1 2019","World Champion"],["Finals MVP","M1 World Championship"],["1","MPL ID title"],["EVOS 'WORLD'","Roster"]],
   narrative:[
-    "When EVOS Legends beat RRQ Hoshi 4-3 in the M1 2019 Grand Final to become Mobile Legends' first-ever World Champion, it was Oura who walked away with the Finals MVP award — the single highest individual honor available in the sport, earned on its very first world stage.",
-    "Widely regarded as one of the best EXP Laners the Indonesian scene has produced, Oura built his reputation on winning the offlane matchup and turning that advantage into map pressure — exactly the kind of quiet dominance that set up EVOS's championship runs.",
-    "That M1 title remains, to this day, the only M-Series World Championship an Indonesian organization has ever won. He also won two MPL Indonesia domestic titles with EVOS (Seasons 4 and 7), but it's the M1 Finals MVP trophy that cements his place as one of the defining names in Indonesian MLBB history."
+    "Oura's road to M1 wasn't instant. As a rookie in Season 1, he helped push EVOS all the way to the Grand Final before falling 3-2 to Team NXL — then did it again in Season 2, losing 3-0 to RRQ. Season 3 was quieter, with EVOS finishing in the lower half of the standings and no finals appearance at all.",
+    "Season 4 is where it all came together. Playing the aggressive, high-kill assassin style that earned him the nickname \"the Father of Assassins\" in the Indonesian scene, Oura helped EVOS finally break through — beating RRQ 3-1 for the franchise's first-ever MPL ID title, and with it, a spot at the very first M-Series World Championship.",
+    "At M1 2019, that same assassin identity carried straight through to the Finals MVP award as EVOS beat RRQ 4-3 to become Mobile Legends' first-ever World Champion. That title remains the only M-Series World Championship an Indonesian organization has ever won. His domestic résumé is comparatively thin — one MPL ID title, after two near-misses — but the M1 Finals MVP trophy, on top of a reputation as one of the era's defining EXP laners, cements his place on this list."
   ],
-  achievements:["M1 World Championship Champion (2019) — first M-Series title for Indonesia","M1 World Championship Grand Finals MVP","2x MPL Indonesia Champion (S4, S7)","Member of EVOS Legends' legendary 'WORLD' roster"]
+  achievements:["M1 World Championship Champion (2019) — first M-Series title for Indonesia","M1 World Championship Grand Finals MVP","1x MPL Indonesia Champion (S4)","MPL Indonesia Season 1 & Season 2 runner-up","Known as \"the Father of Assassins\" in the Indonesian MLBB scene","Member of EVOS Legends' legendary 'WORLD' roster"]
 },
 {
   slug:"luminaire", rank:8, name:"Luminaire", team:"EVOS Legends", pos:"Mid Laner",
@@ -505,18 +507,18 @@ const PLAYERS = [
   achievements:["3x MPL Indonesia Champion (S5, S6, S9)","MPLI 4 Nations Cup Champion (2020)","4x World Championship participant (M1, M2, M3, M4)","MPL Indonesia all-time assists record holder","RRQ Hoshi captain, Seasons 5–8"]
 },
 {
-  slug:"rekt", rank:10, name:"Rekt", team:"EVOS Legends", pos:"Gold Lane / Roamer",
+  slug:"rekt", rank:10, name:"Rekt", team:"EVOS Legends", pos:"Gold Lane → Roamer",
   color:"#1E6FFF",
-  hook:"The only player to compete in every MPL Indonesia season from S1 through S9 — a World Champion who reinvented himself mid-career, switching from gold laner to roamer and winning two more domestic titles in his new role.",
-  grades:{domestic:"B+", international:"A-", longevity:"A", individual:"B", overall:"B+"},
-  stats:[["Career longevity","96%"],["Positional versatility","90%"],["World Championship pedigree","88%"]],
-  statBoxes:[["M1 2019","World Champion"],["2","MPL ID titles"],["S4 Finals MVP","As roamer"],["S1–S9","Every season played"]],
+  hook:"One of the longest careers in MPL Indonesia history — a marksman-turned-tank who won a World Championship, then reinvented his entire role and kept winning.",
+  grades:{domestic:"B+", international:"A-", longevity:"A", individual:"B+", overall:"B+"},
+  stats:[["Career longevity","95%"],["Positional versatility","89%"],["World Championship pedigree","88%"]],
+  statBoxes:[["M1 2019","World Champion"],["2","MPL ID titles"],["S1–S9","Every season played"],["Gold Lane → Roamer","Position switch"]],
   narrative:[
-    "Rekt's career is one of the longest and most unusual in MPL Indonesia history. He debuted as a gold laner for Bigetron in Season 1 — recording the league's first-ever savage along the way — and was still on a pro roster nine seasons later, the only player to appear in every MPL ID campaign through Season 9.",
-    "The defining chapter came at EVOS Legends. Originally signed as a carry-oriented gold laner, Rekt switched to roamer when the roster needed it — and thrived. He won MPL ID Season 4 as a roamer, took home Finals MVP honors, then helped EVOS capture M1 2019 as part of the legendary WORLD roster alongside Wannn, Oura, and Luminaire.",
-    "He wasn't done. After M1, Rekt kept winning domestically — a second MPL ID title in Season 7, Best Roamer honors that same season — proving the positional switch wasn't a one-off fluke but a genuine reinvention. That combination of world-stage hardware, multi-role versatility, and nearly a decade of uninterrupted league presence earns him the final spot on this list."
+    "Rekt's career is one of the longest and most unusual in MPL Indonesia history. He debuted as a gold laner for Bigetron in Season 1, moved to Louvre Esports for Season 2, then joined EVOS Legends in Season 3 — and stayed there for the rest of his career, playing every MPL ID season through Season 9.",
+    "His signature run came at EVOS's peak. As a sharp-shooting marksman known as \"the farmer\" for his fast farming speed, Rekt was a core piece of EVOS's Season 4 championship roster, then helped the team win the inaugural M1 2019 World Championship as part of the legendary WORLD roster alongside Oura, Wannn, and Luminaire.",
+    "He wasn't done reinventing himself. During Season 7, with EVOS short at tank, Rekt moved into the roamer role mid-season and made it work — the shift became permanent, capped off with a Best Roamer award for that season, and EVOS went on to win the title too. Going from a World Championship-winning marksman to a title-winning, Best Roamer-honored tank in a completely different role, without ever leaving the org, is a rare kind of career versatility."
   ],
-  achievements:["M1 World Championship Champion (2019)","2x MPL Indonesia Champion (S4, S7)","MPL Indonesia Grand Finals MVP (S4)","MPL Indonesia Best Roamer (S7)","Only player to compete in MPL Indonesia Seasons 1 through 9","First savage in MPL Indonesia history (Season 1)","Member of EVOS Legends' legendary 'WORLD' roster"]
+  achievements:["M1 World Championship Champion (2019)","2x MPL Indonesia Champion (S4, S7)","MPL Indonesia Best Roamer (S7)","One of the very few multi-role players to start at both gold lane and roamer for a title-winning roster","One of the longest careers in league history, playing MPL Indonesia Seasons 1 through 9","Member of EVOS Legends' legendary 'WORLD' roster"]
 }
 ];
 
@@ -533,7 +535,7 @@ const HONORABLE_MENTIONS = [
       "RRQ Hoshi captain from Season 8 onward"
     ],
     storyline:"R7 was the player RRQ could always count on. He inherited the captain's armband from Vyn in Season 8 and held the exp lane through RRQ's back-to-back titles in Seasons 5 and 6, then stayed for the Season 9 championship run years later — a rare kind of organizational loyalty in a league defined by roster churn. On the world stage he never broke through to a final, but third-place finishes at M2 and M4 plus a SEA Games silver medal showed he belonged among Indonesia's internationally tested veterans.",
-    whyNotCut:"Three MPL ID titles and real international experience put R7 close — but this list rewards peak individual impact and championship-defining moments, and R7 was always the stabilizer rather than the star. He never won Finals or Regular Season MVP hardware, never captained a world-title run, and his three titles came as part of rosters where Lemon, Vyn, or both were the clear headliners. Butss's five titles and ONIC captaincy at #5, plus Rekt's M1 trophy and positional reinvention at #10, edged him out of the final spots."
+    whyNotCut:"Three MPL ID titles and real international experience put R7 close — but this list rewards peak individual impact and championship-defining moments, and R7 was always the stabilizer rather than the star. He never won Finals or Regular Season MVP hardware, never captained a world-title run, and his three titles came as part of rosters where Lemon, Vyn, or both were the clear headliners. Butss's five titles and ONIC captaincy at #5, plus Rekt's M1 trophy and rare positional reinvention at #10, edged him out of the final spots."
   },
   {
     name:"LJ", team:"NXL → RRQ Hoshi → EVOS Legends", tag:"4x MPL Champion · 3 Organizations",

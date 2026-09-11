@@ -3,226 +3,630 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Top 10 MPL Indonesia Players of All Time | Arena Ten</title>
-<meta name="description" content="A ranked, graded breakdown of the greatest MPL Indonesia players ever — built from domestic titles, international results, longevity, and individual awards. From EVOS's M1 World Championship to ONIC's modern dynasty.">
-<meta property="og:title" content="Top 10 MPL Indonesia Players of All Time | Arena Ten">
-<meta property="og:description" content="The definitive, sourced ranking of MPL Indonesia's all-time greats — Kairi, Kiboy, Sanz, Lemon, and the legends of EVOS's M1 World Championship run.">
+<title>Top 10 Indonesian Mobile Legends Players of All Time | Arena Ten</title>
+<meta name="description" content="A ranked, graded breakdown of the greatest Indonesian Mobile Legends: Bang Bang players ever — built from domestic titles, international results, longevity, and individual awards.">
+<meta property="og:title" content="Top 10 Indonesian Mobile Legends Players of All Time | Arena Ten">
+<meta property="og:description" content="The definitive, sourced ranking of Indonesia's all-time Mobile Legends greats — Kairi, Kiboy, Sanz, Lemon, and the legends of EVOS's M1 World Championship run.">
 <meta property="og:type" content="website">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;700;800;900&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Nunito+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
 <style>
 :root{
-  --void:#0A0B14;
-  --panel:#12141F;
-  --panel-2:#171B2C;
-  --line: rgba(34,229,216,0.16);
-  --line-soft: rgba(255,255,255,0.08);
-  --chalk:#EAF4FF;
-  --chalk-dim: rgba(234,244,255,0.60);
-  --cyan:#22E5D8;
-  --violet:#B14EFF;
-  --flare:#FF3D81;
-  --a:#22E5D8;
-  --b:#B14EFF;
-  --c:#FFB020;
-  --d:#FF4D6D;
+  --bg-deep:#0a1628;
+  --bg-mid:#122338;
+  --panel:rgba(18,35,56,0.92);
+  --panel-light:rgba(26,48,76,0.75);
+  --line:rgba(212,175,55,0.22);
+  --line-strong:rgba(212,175,55,0.5);
+  --cream:#f2ead8;
+  --cream-dim:rgba(242,234,216,0.72);
+  --gold:#d4af37;
+  --gold-light:#f0cc5a;
+  --gold-glow:rgba(212,175,55,0.35);
+  --blue-accent:#3d8bfd;
+  --purple-accent:#8b6bb8;
+  --flag-red:#E4002B;
+  --a:#2ecc71;
+  --b:#f0cc5a;
+  --c:#e67e22;
+  --d:#e74c3c;
 }
 *{box-sizing:border-box;}
 html{scroll-behavior:smooth;}
 body{
   margin:0;
-  background:var(--void);
-  color:var(--chalk);
-  font-family:'Inter',sans-serif;
+  min-height:100vh;
+  background:
+    radial-gradient(ellipse 90% 55% at 50% -5%, rgba(61,139,253,0.14), transparent 55%),
+    radial-gradient(ellipse 50% 35% at 95% 80%, rgba(139,107,184,0.1), transparent),
+    radial-gradient(ellipse 40% 30% at 5% 70%, rgba(212,175,55,0.06), transparent),
+    linear-gradient(180deg, var(--bg-deep) 0%, #0f1f35 45%, var(--bg-mid) 100%);
+  color:var(--cream);
+  font-family:'Nunito Sans',sans-serif;
   -webkit-font-smoothing:antialiased;
 }
 body::before{
   content:"";
-  position:fixed; inset:0; z-index:0; pointer-events:none;
-  background-image:
-    radial-gradient(circle at 15% 10%, rgba(34,229,216,0.08), transparent 40%),
-    radial-gradient(circle at 85% 30%, rgba(177,78,255,0.08), transparent 40%),
-    repeating-linear-gradient(0deg, rgba(255,255,255,0.02) 0px, rgba(255,255,255,0.02) 1px, transparent 1px, transparent 38px),
-    repeating-linear-gradient(90deg, rgba(255,255,255,0.02) 0px, rgba(255,255,255,0.02) 1px, transparent 1px, transparent 38px);
+  position:fixed; inset:0; pointer-events:none; z-index:0;
+  background:url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23d4af37' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  opacity:0.5;
 }
-.display{font-family:'Orbitron',sans-serif; text-transform:uppercase; letter-spacing:0.02em;}
-.mono{font-family:'JetBrains Mono',monospace;}
+.display{font-family:'Cinzel',serif; text-transform:uppercase; letter-spacing:0.04em;}
+.label{font-family:'Nunito Sans',sans-serif; font-size:0.72rem; font-weight:700; letter-spacing:0.12em; text-transform:uppercase;}
 a{color:inherit; text-decoration:none;}
-::selection{background:var(--flare); color:#0A0B14;}
+::selection{background:var(--gold); color:#fff;}
 
-.nav{
-  position:sticky; top:0; z-index:50;
-  display:flex; align-items:center; justify-content:space-between;
-  padding:18px 5vw;
-  background:rgba(10,11,20,0.85);
-  backdrop-filter:blur(10px);
+/* ===== SIDEBAR (persistent, stays put on scroll) ===== */
+.sidebar{
+  position:fixed; top:0; left:0; bottom:0; width:248px; z-index:60;
+  display:flex; flex-direction:column;
+  background:linear-gradient(180deg, rgba(18,9,9,0.98), rgba(10,22,40,0.97));
+  border-right:1px solid var(--line-strong);
+  box-shadow:4px 0 28px rgba(0,0,0,0.35);
+  overflow-y:auto;
+  transition:transform .25s ease;
+}
+.sidebar .logo{display:flex; align-items:center; gap:12px; font-size:1.02rem; padding:22px 20px 18px;}
+.sidebar .logo .shield{
+  width:28px; height:32px; flex-shrink:0;
+  background:linear-gradient(180deg, var(--gold-light), var(--gold) 45%, #9a7b1a);
+  clip-path:polygon(50% 0%, 92% 16%, 92% 58%, 50% 100%, 8% 58%, 8% 16%);
+  box-shadow:0 0 14px var(--gold-glow);
+  position:relative;
+  border:1px solid rgba(0,0,0,0.25);
+}
+.sidebar .logo .shield::after{
+  content:"10"; position:absolute; inset:0;
+  display:flex; align-items:center; justify-content:center;
+  font-family:'Cinzel',serif; font-size:0.62rem; font-weight:800; color:#1a1208;
+  padding-top:4px;
+  text-shadow:0 1px 2px rgba(255,255,255,0.4);
+}
+.sidebar .logo b{display:block; letter-spacing:0.06em; color:var(--gold-light); text-shadow:0 0 20px var(--gold-glow); font-size:1rem;}
+.sidebar .logo small{display:block; font-family:'Nunito Sans',sans-serif; text-transform:uppercase; letter-spacing:0.14em; font-size:0.54rem; color:var(--cream-dim); font-weight:700;}
+.sidebar .tag{
+  margin:0 20px 18px;
+  font-family:'Cinzel',serif; font-size:0.66rem; color:var(--gold-light);
+  border:1px solid var(--line-strong); padding:6px 14px; text-align:center;
+  background:linear-gradient(180deg, rgba(212,175,55,0.12), rgba(212,175,55,0.04));
+  box-shadow:inset 0 1px 0 rgba(255,255,255,0.08);
+}
+.sidebar-links{display:flex; flex-direction:column; padding:6px 12px; gap:2px; flex:1;}
+.sidebar-links a{
+  display:flex; align-items:center; gap:12px;
+  padding:12px 14px; border-radius:3px;
+  font-family:'Cinzel',serif; font-size:0.82rem; letter-spacing:0.05em;
+  color:var(--cream-dim); font-weight:600;
+  border-left:2px solid transparent;
+  transition:background .15s, color .15s, border-color .15s;
+}
+.sidebar-links a .ic{width:16px; text-align:center; opacity:0.85; flex-shrink:0;}
+.sidebar-links a:hover{background:rgba(212,175,55,0.08); color:var(--cream);}
+.sidebar-links a.active{
+  color:var(--gold-light); background:rgba(212,175,55,0.1);
+  border-left-color:var(--gold);
+}
+.sidebar-foot{padding:16px 20px 22px; font-size:0.66rem; color:var(--cream-dim); border-top:1px solid var(--line); line-height:1.5;}
+
+.mobile-topbar{display:none;}
+.sidebar-backdrop{display:none;}
+
+/* Desktop-persistent collapse toggle (always available) */
+.sidebar-edge-toggle{
+  position:fixed; top:26px; left:248px; z-index:65;
+  width:22px; height:44px;
+  display:flex; align-items:center; justify-content:center;
+  background:linear-gradient(180deg, rgba(212,175,55,0.16), rgba(212,175,55,0.05));
+  border:1px solid var(--line-strong); border-left:none;
+  color:var(--gold-light); font-size:0.78rem; cursor:pointer;
+  transition:left .25s ease, background .15s;
+}
+.sidebar-edge-toggle:hover{background:rgba(212,175,55,0.24);}
+body.sidebar-collapsed .sidebar{transform:translateX(-100%);}
+body.sidebar-collapsed .sidebar-edge-toggle{left:0;}
+body.sidebar-collapsed main{margin-left:0 !important;}
+@media(max-width:900px){ .sidebar-edge-toggle{display:none;} }
+
+/* Floating back-to-top control */
+.back-to-top{
+  position:fixed; right:28px; bottom:28px; z-index:58;
+  width:48px; height:48px; border-radius:50%;
+  background:linear-gradient(180deg, var(--gold-light), var(--gold));
+  color:#1a1208; border:1px solid var(--gold); font-size:1.3rem; font-weight:800; line-height:1;
+  display:flex; align-items:center; justify-content:center;
+  cursor:pointer; box-shadow:0 6px 20px rgba(0,0,0,0.4);
+  opacity:0; pointer-events:none; transform:translateY(12px);
+  transition:opacity .2s ease, transform .2s ease, box-shadow .2s ease;
+}
+.back-to-top.show{opacity:1; pointer-events:auto; transform:translateY(0);}
+.back-to-top:hover{box-shadow:0 0 20px var(--gold-glow);}
+@media(max-width:900px){ .back-to-top{right:18px; bottom:18px; width:44px; height:44px; font-size:1.15rem;} }
+
+@media(max-width:900px){
+  .sidebar{
+    transform:translateX(-100%);
+    width:250px;
+  }
+  .sidebar.open{transform:translateX(0); box-shadow:8px 0 40px rgba(0,0,0,0.55);}
+  .mobile-topbar{
+    display:flex; align-items:center; justify-content:space-between;
+    position:sticky; top:0; z-index:55;
+    padding:14px 5vw;
+    background:linear-gradient(180deg, rgba(18,9,9,0.97), rgba(18,9,9,0.9));
+    backdrop-filter:blur(10px);
+    border-bottom:1px solid var(--line-strong);
+  }
+  .mobile-topbar .logo{display:flex; align-items:center; gap:10px;}
+  .mobile-topbar .logo .shield{
+    width:24px; height:28px; flex-shrink:0;
+    background:linear-gradient(180deg, var(--gold-light), var(--gold) 45%, #9a7b1a);
+    clip-path:polygon(50% 0%, 92% 16%, 92% 58%, 50% 100%, 8% 58%, 8% 16%);
+    box-shadow:0 0 14px var(--gold-glow);
+    border:1px solid rgba(0,0,0,0.25);
+  }
+  .mobile-topbar .logo b{font-family:'Cinzel',serif; font-size:0.92rem; letter-spacing:0.05em; color:var(--gold-light);}
+  .menu-btn{
+    width:38px; height:34px; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:5px;
+    background:rgba(212,175,55,0.08); border:1px solid var(--line-strong); cursor:pointer;
+  }
+  .menu-btn span{width:18px; height:2px; background:var(--gold-light); display:block;}
+  .sidebar-backdrop.show{
+    display:block; position:fixed; inset:0; z-index:59;
+    background:rgba(4,8,14,0.6); backdrop-filter:blur(2px);
+  }
+  main{margin-left:0 !important;}
+}
+
+main{position:relative; z-index:1; max-width:1120px; margin:0 auto 0 248px; padding:44px 5vw 100px; min-height:100vh; transition:margin-left .25s ease;}
+@media(max-width:900px){ main{padding:36px 5vw 100px;} }
+
+.hero{
+  padding:52px 0 36px;
   border-bottom:1px solid var(--line);
+  position:relative;
 }
-.nav .logo{display:flex; align-items:center; gap:10px; font-size:1.05rem;}
-.nav .logo .hex{
-  width:16px; height:16px;
-  background:linear-gradient(135deg, var(--cyan), var(--violet));
-  clip-path:polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+.hero::after{
+  content:""; position:absolute; bottom:-1px; left:0; right:0; height:1px;
+  background:linear-gradient(90deg, transparent, var(--gold), transparent);
+  opacity:0.5;
 }
-.nav .logo b{display:block; letter-spacing:0.06em;}
-.nav .logo small{display:block; font-family:'Inter',sans-serif; text-transform:none; letter-spacing:0; font-size:0.62rem; color:var(--chalk-dim); font-weight:600;}
-.nav .tag{font-family:'JetBrains Mono',monospace; font-size:0.74rem; color:var(--cyan); border:1px solid rgba(34,229,216,0.35); padding:6px 12px; border-radius:4px;}
+.eyebrow{
+  font-family:'Cinzel',serif; color:var(--gold); font-size:0.82rem;
+  letter-spacing:0.18em; margin-bottom:16px;
+}
+.hero h1{
+  font-size:clamp(2rem,5.5vw,3.8rem); line-height:1.12; margin:0 0 20px;
+  color:var(--cream);
+  text-shadow:0 2px 24px rgba(212,175,55,0.15);
+}
+.hero h1 .gold{
+  background:linear-gradient(180deg, var(--flag-red) 0%, var(--flag-red) 48%, #ffffff 52%, #ffffff 100%);
+  -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text;
+}
+.hero p{max-width:660px; color:var(--cream-dim); font-size:1.02rem; line-height:1.7;}
+.hero .meta-row{
+  display:grid; grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+  gap:14px; margin-top:32px;
+}
+.meta-item{
+  background:var(--panel-light);
+  border:1px solid var(--line);
+  padding:16px 18px;
+  box-shadow:inset 0 1px 0 rgba(255,255,255,0.05);
+}
+.meta-item .label{color:var(--gold); margin-bottom:8px; display:block;}
+.meta-item b{color:var(--cream); display:block; font-size:1rem; font-weight:800; line-height:1.3;}
 
-main{position:relative; z-index:1; max-width:1120px; margin:0 auto; padding:0 5vw 100px;}
+.method{
+  display:grid; grid-template-columns:repeat(auto-fit,minmax(160px,1fr)); gap:12px;
+  margin:36px 0 0;
+}
+@media(max-width:760px){.method{grid-template-columns:repeat(2,1fr);}}
+.method div{
+  background:var(--panel);
+  border:1px solid var(--line);
+  padding:18px 16px;
+  position:relative;
+  box-shadow:0 4px 16px rgba(0,0,0,0.2);
+}
+.method div::before{
+  content:""; position:absolute; top:0; left:12px; right:12px; height:2px;
+  background:linear-gradient(90deg, transparent, var(--gold), transparent);
+  opacity:0.6;
+}
+.method div span{display:block; font-family:'Cinzel',serif; font-size:0.72rem; color:var(--gold-light); margin-bottom:8px; letter-spacing:0.06em;}
+.method div p{margin:0; font-size:0.84rem; color:var(--cream-dim); line-height:1.45;}
 
-.hero{padding:64px 0 40px; border-bottom:1px solid var(--line-soft);}
-.eyebrow{font-family:'JetBrains Mono',monospace; color:var(--violet); font-size:0.78rem; letter-spacing:0.14em; margin-bottom:14px;}
-.hero h1{font-size:clamp(2.2rem,6vw,4.4rem); line-height:1.02; margin:0 0 20px;}
-.hero h1 .glow{background:linear-gradient(90deg, var(--cyan), var(--violet)); -webkit-background-clip:text; background-clip:text; color:transparent;}
-.hero p{max-width:640px; color:var(--chalk-dim); font-size:1.02rem; line-height:1.65;}
-.hero .meta-row{display:flex; gap:28px; margin-top:32px; flex-wrap:wrap;}
-.meta-item{font-family:'JetBrains Mono',monospace; font-size:0.76rem; color:var(--chalk-dim);}
-.meta-item b{color:var(--chalk); display:block; font-size:1.05rem; font-family:'Inter',sans-serif; font-weight:800;}
+.list-head{display:flex; justify-content:center; align-items:center; margin:52px 0 22px;}
+.list-head h2{
+  font-family:'Cinzel',serif; font-size:0.95rem; margin:0;
+  color:var(--cream); font-weight:700; letter-spacing:0.12em;
+  padding:0 24px; position:relative; text-align:center;
+}
+.list-head h2::before,.list-head h2::after{
+  content:"✦"; color:var(--gold); opacity:0.7; margin:0 10px;
+}
 
-.method{display:grid; grid-template-columns:repeat(4,1fr); gap:1px; background:var(--line-soft); margin:36px 0 0; border:1px solid var(--line-soft);}
-.method div{background:var(--panel); padding:16px 18px;}
-.method div span{display:block; font-family:'JetBrains Mono',monospace; font-size:0.66rem; color:var(--cyan); margin-bottom:6px;}
-.method div p{margin:0; font-size:0.81rem; color:var(--chalk-dim); line-height:1.4;}
-
-.list-head{display:flex; justify-content:space-between; align-items:baseline; margin:56px 0 18px;}
-.list-head h2{font-size:1.05rem; margin:0; color:var(--chalk-dim); font-weight:600; letter-spacing:0.02em;}
 .row{
   display:grid;
-  grid-template-columns: 74px 1fr auto auto;
+  grid-template-columns: 62px 1fr auto auto;
   align-items:center;
-  gap:20px;
-  padding:20px 16px;
-  border-bottom:1px solid var(--line-soft);
+  gap:18px;
+  padding:18px 20px;
+  margin-bottom:10px;
+  background:var(--panel);
+  border:1px solid var(--line);
   cursor:pointer;
-  transition: background 0.15s ease, padding-left 0.15s ease;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
   position:relative;
-  overflow:hidden;
+  box-shadow:0 2px 12px rgba(0,0,0,0.15);
 }
-.row:hover{background:var(--panel); padding-left:22px;}
+.row:hover{
+  border-color:var(--line-strong);
+  box-shadow:0 4px 24px rgba(0,0,0,0.25), 0 0 20px color-mix(in srgb, var(--team, var(--gold)) 15%, transparent);
+  transform:translateY(-1px);
+}
 .row::before{
-  content:""; position:absolute; left:0; top:0; bottom:0; width:3px;
-  background: var(--team, var(--cyan)); opacity:0; transition:opacity .15s;
-  box-shadow: 0 0 12px var(--team, var(--cyan));
+  content:""; position:absolute; left:0; top:8px; bottom:8px; width:4px;
+  background:linear-gradient(180deg, var(--team, var(--gold)), color-mix(in srgb, var(--team, var(--gold)) 40%, transparent));
+  border-radius:0 2px 2px 0;
+  opacity:0.85;
 }
-.row:hover::before{opacity:1;}
-.rank-hex{
-  width:52px; height:52px;
+.rank-badge{
+  width:48px; height:54px;
   display:flex; align-items:center; justify-content:center;
-  clip-path:polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-  background: var(--panel-2);
-  border:1px solid var(--team, var(--cyan));
-  font-family:'Orbitron',sans-serif; font-weight:800; font-size:1.15rem; color:var(--team, var(--cyan));
+  background:linear-gradient(180deg, rgba(35,20,20,0.95), rgba(18,10,10,0.98));
+  border:2px solid var(--team, var(--gold));
+  clip-path:polygon(50% 0%, 100% 15%, 100% 70%, 50% 100%, 0% 70%, 0% 15%);
+  box-shadow:0 0 14px color-mix(in srgb, var(--team, var(--gold)) 25%, transparent);
 }
-.row-name h3{margin:0 0 4px; font-size:1.2rem; font-weight:800;}
-.row-name .sub{font-family:'JetBrains Mono',monospace; font-size:0.74rem; color:var(--chalk-dim);}
+.rank-badge span{
+  font-family:'Cinzel',serif; font-size:1.15rem; font-weight:800;
+  color:var(--team, var(--gold-light));
+  text-shadow:0 0 8px color-mix(in srgb, var(--team, var(--gold)) 40%, transparent);
+  margin-top:-2px;
+}
+.row-name h3{margin:0 0 4px; font-size:1.15rem; font-weight:800; color:var(--cream);}
+.row-name .sub{font-size:0.78rem; color:var(--cream-dim); font-weight:600;}
 .row-hook{display:none;}
-@media(min-width:760px){ .row-hook{display:block; max-width:280px; font-size:0.82rem; color:var(--chalk-dim); line-height:1.4;} }
+@media(min-width:760px){ .row-hook{display:block; max-width:280px; font-size:0.82rem; color:var(--cream-dim); line-height:1.45;} }
 .grade-pill{
-  font-family:'Orbitron',sans-serif; font-size:0.95rem; width:42px; height:42px;
-  border-radius:50%; display:flex; align-items:center; justify-content:center;
-  border:2px solid var(--grade-color,var(--b)); color:var(--grade-color,var(--b));
+  font-family:'Cinzel',serif; font-size:0.95rem; font-weight:800;
+  min-width:44px; height:44px; padding:0 6px;
+  display:flex; align-items:center; justify-content:center;
+  background:linear-gradient(180deg, rgba(30,17,17,0.9), rgba(15,8,8,0.95));
+  border:2px solid var(--grade-color,var(--b));
+  color:var(--grade-color,var(--b));
   flex-shrink:0;
+  clip-path:polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  box-shadow:0 0 10px color-mix(in srgb, var(--grade-color,var(--b)) 20%, transparent);
 }
 
 .hm-section{margin-top:56px;}
-.hm-grid{display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:16px; margin-top:18px;}
-.hm-card{background:var(--panel); border:1px solid var(--line-soft); border-radius:14px; padding:22px; border-left:3px solid var(--team,var(--violet));}
-.hm-card .tag{font-family:'JetBrains Mono',monospace; font-size:0.68rem; color:var(--violet); margin-bottom:8px; display:block;}
-.hm-card h4{margin:0 0 6px; font-size:1.15rem;}
-.hm-card .sub{font-family:'JetBrains Mono',monospace; font-size:0.72rem; color:var(--chalk-dim); margin-bottom:12px;}
-.hm-card p{margin:0; font-size:0.87rem; color:var(--chalk-dim); line-height:1.55;}
+.hm-grid{display:grid; grid-template-columns:repeat(auto-fit,minmax(300px,1fr)); gap:18px; margin-top:18px;}
+.hm-card{
+  background:var(--panel);
+  border:1px solid var(--line);
+  padding:24px 22px;
+  border-top:3px solid var(--team,var(--gold));
+  box-shadow:0 4px 20px rgba(0,0,0,0.2);
+  position:relative;
+}
+.hm-card::before{
+  content:""; position:absolute; top:12px; right:14px;
+  width:20px; height:24px; opacity:0.15;
+  background:var(--team,var(--gold));
+  clip-path:polygon(50% 0%, 100% 18%, 100% 72%, 50% 100%, 0% 72%, 0% 18%);
+}
+.hm-card .tag{font-size:0.68rem; color:var(--gold); margin-bottom:8px; display:block;}
+.hm-card h4{margin:0 0 6px; font-size:1.15rem; font-family:'Cinzel',serif; color:var(--cream);}
+.hm-card .sub{font-size:0.76rem; color:var(--cream-dim); margin-bottom:12px; font-weight:600;}
+.hm-card p{margin:0; font-size:0.87rem; color:var(--cream-dim); line-height:1.6;}
+.hm-card .hm-label{font-size:0.66rem; color:var(--gold-light); margin-top:18px; margin-bottom:8px;}
+.hm-card ul{margin:0; padding:0 0 0 18px; font-size:0.84rem; color:var(--cream-dim); line-height:1.55;}
+.hm-card ul li{margin-bottom:5px;}
+.hm-card ul li::marker{color:var(--gold);}
 
-.site-footer{margin-top:80px; padding-top:28px; border-top:1px solid var(--line-soft); display:flex; justify-content:space-between; flex-wrap:wrap; gap:12px; color:var(--chalk-dim); font-size:0.78rem;}
+.site-footer{
+  margin-top:80px; padding-top:28px;
+  border-top:1px solid var(--line);
+  display:flex; justify-content:space-between; flex-wrap:wrap; gap:12px;
+  color:var(--cream-dim); font-size:0.78rem;
+}
 
-.back-link{display:inline-flex; align-items:center; gap:8px; margin:32px 0 0; font-family:'JetBrains Mono',monospace; font-size:0.78rem; color:var(--chalk-dim);}
-.back-link:hover{color:var(--cyan);}
+.back-link{
+  display:inline-flex; align-items:center; gap:8px; margin:32px 0 0;
+  font-size:0.82rem; color:var(--gold); font-weight:700; letter-spacing:0.04em;
+}
+.back-link:hover{color:var(--gold-light);}
 
 .p-hero{
   position:relative;
   margin-top:22px;
-  padding:46px 32px;
-  border:1px solid var(--line-soft);
-  border-radius:16px;
+  padding:44px 32px 40px;
+  border:1px solid var(--line-strong);
   overflow:hidden;
-  background: linear-gradient(135deg, color-mix(in srgb, var(--team,#1E6FFF) 22%, #0A0B14) 0%, #0A0B14 70%);
+  background:
+    linear-gradient(135deg, color-mix(in srgb, var(--team,var(--gold)) 35%, #120909) 0%, rgba(18,9,9,0.95) 55%, #170d0d 100%);
+  box-shadow:0 8px 32px rgba(0,0,0,0.35), inset 0 1px 0 rgba(255,255,255,0.06);
+}
+.p-hero::before{
+  content:""; position:absolute; inset:8px;
+  border:1px solid rgba(212,175,55,0.15); pointer-events:none;
 }
 .p-hero .watermark{
-  position:absolute; right:-0.05em; top:-0.28em;
-  font-family:'Orbitron',sans-serif; font-weight:900; font-size:12rem; color:rgba(255,255,255,0.05);
+  position:absolute; right:-0.02em; top:-0.2em;
+  font-family:'Cinzel',serif; font-size:12rem; font-weight:800;
+  color:rgba(212,175,55,0.06);
   line-height:1; pointer-events:none; user-select:none;
 }
-.p-hero .rank-tag{font-family:'JetBrains Mono',monospace; font-size:0.82rem; background:rgba(0,0,0,0.4); border:1px solid var(--team,var(--cyan)); color:var(--team,var(--cyan)); padding:6px 14px; border-radius:4px; display:inline-block; margin-bottom:18px;}
-.p-hero h1{font-size:clamp(2.1rem,5.4vw,3.8rem); margin:0 0 6px; position:relative;}
-.p-hero .team-line{font-family:'JetBrains Mono',monospace; color:rgba(234,244,255,0.85); font-size:0.92rem; margin-bottom:22px;}
-.p-hero .hook{max-width:640px; font-size:1.02rem; line-height:1.6; color:rgba(234,244,255,0.92); position:relative;}
+.p-hero .rank-tag{
+  font-family:'Cinzel',serif; font-size:0.78rem; letter-spacing:0.1em;
+  background:linear-gradient(180deg, rgba(212,175,55,0.2), rgba(212,175,55,0.08));
+  border:1px solid var(--line-strong); padding:7px 16px;
+  display:inline-block; margin-bottom:18px; color:var(--gold-light);
+}
+.p-hero h1{
+  font-family:'Cinzel',serif;
+  font-size:clamp(2rem,5vw,3.4rem); margin:0 0 8px; position:relative;
+  color:var(--cream); text-shadow:0 2px 20px rgba(0,0,0,0.4);
+}
+.p-hero .team-line{color:var(--cream-dim); font-size:0.92rem; margin-bottom:20px; font-weight:700; letter-spacing:0.04em;}
+.p-hero .hook{max-width:640px; font-size:1.02rem; line-height:1.65; color:var(--cream-dim); position:relative;}
 
 .report-card{
-  display:grid; grid-template-columns:repeat(4,1fr); gap:1px;
-  background:var(--line-soft); border:1px solid var(--line-soft); margin-top:-1px; border-radius:0 0 16px 16px; overflow:hidden;
+  display:grid; grid-template-columns:repeat(auto-fit,minmax(120px,1fr)); gap:0;
+  border:1px solid var(--line); border-top:none;
+  overflow:hidden;
+  background:var(--panel);
 }
-.report-card .cell{background:#0E1019; padding:20px 14px; text-align:center;}
-.report-card .cell .label{font-family:'JetBrains Mono',monospace; font-size:0.62rem; color:var(--chalk-dim); text-transform:uppercase; letter-spacing:0.07em; margin-bottom:10px;}
-.report-card .cell .grade{font-family:'Orbitron',sans-serif; font-weight:800; font-size:1.9rem; color:var(--grade-color);}
-@media(max-width:640px){.report-card{grid-template-columns:repeat(2,1fr);}}
+.report-card .cell{
+  background:rgba(18,9,9,0.85);
+  padding:22px 14px; text-align:center;
+  border-right:1px solid var(--line);
+  border-bottom:1px solid var(--line);
+}
+.report-card .cell .label{font-size:0.62rem; color:var(--cream-dim); margin-bottom:10px;}
+.report-card .cell .grade{font-family:'Cinzel',serif; font-size:2rem; font-weight:800; color:var(--grade-color);}
+@media(max-width:640px){
+  .report-card{grid-template-columns:repeat(2,1fr);}
+}
 
-.section-title{font-family:'JetBrains Mono',monospace; color:var(--violet); font-size:0.76rem; letter-spacing:0.1em; margin:52px 0 18px; display:flex; align-items:center; gap:10px;}
-.section-title::after{content:""; flex:1; height:1px; background:var(--line-soft);}
+.section-title{
+  font-family:'Cinzel',serif; color:var(--gold-light); font-size:0.82rem;
+  letter-spacing:0.14em; margin:48px 0 18px;
+  display:flex; align-items:center; gap:14px; font-weight:700;
+}
+.section-title::before,.section-title::after{
+  content:""; flex:1; height:1px;
+  background:linear-gradient(90deg, transparent, var(--line-strong), transparent);
+}
+
 .stat-grid{display:grid; grid-template-columns:repeat(auto-fit,minmax(140px,1fr)); gap:14px;}
-.stat-box{background:var(--panel); border:1px solid var(--line-soft); border-radius:12px; padding:18px;}
-.stat-box .v{font-family:'Orbitron',sans-serif; font-weight:800; font-size:1.7rem; color:var(--chalk);}
-.stat-box .k{font-family:'JetBrains Mono',monospace; font-size:0.68rem; color:var(--chalk-dim); margin-top:4px;}
-.bar-row{display:grid; grid-template-columns:130px 1fr 50px; align-items:center; gap:14px; margin-bottom:14px;}
-.bar-row .lbl{font-size:0.83rem; color:var(--chalk-dim); font-family:'JetBrains Mono',monospace;}
-.bar-track{height:9px; background:var(--panel-2); border-radius:6px; overflow:hidden; border:1px solid var(--line-soft);}
-.bar-fill{height:100%; background:linear-gradient(90deg, var(--team,var(--cyan)), var(--violet));}
-.bar-row .pct{font-family:'JetBrains Mono',monospace; font-size:0.76rem; color:var(--chalk-dim); text-align:right;}
+.stat-box{
+  background:var(--panel); border:1px solid var(--line); padding:20px 16px;
+  text-align:center; box-shadow:0 2px 12px rgba(0,0,0,0.15);
+  position:relative;
+}
+.stat-box::before{
+  content:""; position:absolute; top:0; left:20%; right:20%; height:2px;
+  background:linear-gradient(90deg, transparent, var(--gold), transparent); opacity:0.5;
+}
+.stat-box .v{font-family:'Cinzel',serif; font-size:1.65rem; font-weight:800; color:var(--gold-light);}
+.stat-box .k{font-size:0.68rem; color:var(--cream-dim); margin-top:6px; font-weight:600; letter-spacing:0.04em;}
 
-.prose p{line-height:1.75; color:var(--chalk-dim); font-size:0.98rem; margin:0 0 18px;}
-.prose strong{color:var(--chalk); font-weight:700;}
+.bar-row{display:grid; grid-template-columns:130px 1fr 50px; align-items:center; gap:14px; margin-bottom:16px;}
+.bar-row .lbl{font-size:0.82rem; color:var(--cream-dim); font-weight:600;}
+.bar-track{
+  height:12px; background:rgba(18,9,9,0.8); overflow:hidden;
+  border:1px solid var(--line); border-radius:2px;
+  box-shadow:inset 0 2px 4px rgba(0,0,0,0.3);
+}
+.bar-fill{
+  height:100%;
+  background:linear-gradient(90deg, color-mix(in srgb, var(--team,var(--gold)) 70%, #000), var(--team,var(--gold)));
+  box-shadow:0 0 8px color-mix(in srgb, var(--team,var(--gold)) 40%, transparent);
+}
+.bar-row .pct{font-size:0.76rem; color:var(--gold-light); text-align:right; font-weight:700;}
+
+.prose p{line-height:1.75; color:var(--cream-dim); font-size:0.98rem; margin:0 0 18px;}
+.prose strong{color:var(--cream); font-weight:700;}
 .achv-list{list-style:none; margin:0; padding:0; display:grid; gap:10px;}
-.achv-list li{display:flex; gap:12px; align-items:flex-start; font-size:0.93rem; color:var(--chalk-dim); line-height:1.5;}
-.achv-list li::before{content:"▸"; color:var(--cyan); flex-shrink:0;}
+.achv-list li{
+  display:flex; gap:12px; align-items:flex-start;
+  font-size:0.93rem; color:var(--cream-dim); line-height:1.55;
+  padding:12px 14px; background:var(--panel-light); border:1px solid var(--line);
+}
+.achv-list li::before{content:"⚔"; color:var(--gold); flex-shrink:0; font-size:0.85rem;}
 
 .pager{display:grid; grid-template-columns:1fr 1fr; gap:16px; margin-top:60px;}
-.pager a{border:1px solid var(--line-soft); border-radius:14px; padding:20px 22px; display:block; transition:border-color .15s, background .15s;}
-.pager a:hover{border-color:var(--cyan); background:var(--panel);}
-.pager .dir{font-family:'JetBrains Mono',monospace; font-size:0.68rem; color:var(--chalk-dim); margin-bottom:6px;}
-.pager .nm{font-weight:800; font-size:1.05rem;}
+.pager a{
+  border:1px solid var(--line); padding:20px 22px; display:block;
+  background:var(--panel);
+  transition:border-color .2s, box-shadow .2s;
+}
+.pager a:hover{border-color:var(--line-strong); box-shadow:0 4px 20px rgba(0,0,0,0.25);}
+.pager .dir{font-size:0.68rem; color:var(--gold); margin-bottom:6px; font-weight:700; letter-spacing:0.08em;}
+.pager .nm{font-weight:800; font-size:1.05rem; font-family:'Cinzel',serif; color:var(--cream);}
 .pager .next{text-align:right;}
 @media(max-width:600px){.pager{grid-template-columns:1fr;}}
 
+/* HUB PAGE */
+.hub-intro{max-width:680px;}
+.hub-grid{display:grid; grid-template-columns:repeat(auto-fit,minmax(300px,1fr)); gap:20px; margin-top:40px;}
+.hub-card{
+  background:var(--panel); border:1px solid var(--line); padding:30px 26px;
+  cursor:pointer; position:relative; overflow:hidden;
+  transition:border-color .2s, box-shadow .2s, transform .2s;
+  box-shadow:0 4px 16px rgba(0,0,0,0.2);
+}
+.hub-card:hover{border-color:var(--line-strong); box-shadow:0 8px 28px rgba(0,0,0,0.3); transform:translateY(-2px);}
+.hub-card .hub-badge{font-family:'Cinzel',serif; font-size:0.68rem; color:var(--gold-light); letter-spacing:0.1em; display:block; margin-bottom:12px;}
+.hub-card h3{font-family:'Cinzel',serif; font-size:1.35rem; margin:0 0 10px; color:var(--cream); line-height:1.3;}
+.hub-card p{color:var(--cream-dim); font-size:0.88rem; line-height:1.55; margin:0 0 18px;}
+.hub-card .hub-meta{font-size:0.72rem; color:var(--gold); font-weight:700; letter-spacing:0.04em;}
+.hub-card.coming-soon{opacity:0.45; cursor:default;}
+.hub-card.coming-soon:hover{transform:none; box-shadow:0 4px 16px rgba(0,0,0,0.2); border-color:var(--line);}
+
+/* PLAYER PHOTO */
+.player-photo{
+  width:64px; height:64px; border-radius:50%; object-fit:cover; flex-shrink:0;
+  border:2px solid var(--team,var(--gold)); background:var(--panel-light);
+  box-shadow:0 0 12px color-mix(in srgb, var(--team,var(--gold)) 25%, transparent);
+}
+.player-photo.small{width:44px; height:44px;}
+.player-photo-lg{
+  width:112px; height:112px; border-radius:50%; object-fit:cover; flex-shrink:0;
+  border:3px solid var(--team,var(--gold)); background:rgba(0,0,0,0.25);
+  box-shadow:0 0 22px color-mix(in srgb, var(--team,var(--gold)) 30%, transparent);
+  margin-bottom:20px;
+}
+
+/* SECTION DIVIDER between stacked player profiles */
+.player-divider{display:flex; align-items:center; gap:18px; margin:76px 0 40px;}
+.player-divider:first-of-type{margin-top:56px;}
+.player-divider .dl{flex:1; height:1px; background:linear-gradient(90deg, transparent, var(--line-strong), transparent);}
+.player-divider .rank-chip{
+  font-family:'Cinzel',serif; font-size:0.85rem; color:var(--gold-light);
+  border:1px solid var(--line-strong); padding:9px 20px; white-space:nowrap;
+  background:linear-gradient(180deg, rgba(212,175,55,0.1), rgba(212,175,55,0.02));
+}
+
+.back-to-hub{
+  display:inline-flex; align-items:center; gap:8px; margin:32px 0 0;
+  font-size:0.82rem; color:var(--gold); font-weight:700; letter-spacing:0.04em;
+}
+.back-to-hub:hover{color:var(--gold-light);}
+
 @media (prefers-reduced-motion: reduce){ *{transition:none !important; scroll-behavior:auto !important;} }
+
+/* ===== HOME PAGE ===== */
+.home-section-lbl{
+  font-family:'Cinzel',serif; color:var(--gold-light); font-size:0.78rem;
+  letter-spacing:0.14em; margin:56px 0 20px; font-weight:700;
+}
+.home-featured{
+  display:block; background:var(--panel); border:1px solid var(--line-strong);
+  padding:28px 26px; position:relative; overflow:hidden;
+  box-shadow:0 6px 24px rgba(0,0,0,0.25);
+}
+.home-featured::before{
+  content:""; position:absolute; top:0; left:0; right:0; height:2px;
+  background:linear-gradient(90deg, transparent, var(--gold), transparent);
+}
+.home-featured .hub-badge{font-family:'Cinzel',serif; font-size:0.68rem; color:var(--gold-light); letter-spacing:0.1em; display:block; margin-bottom:12px;}
+.home-featured h3{font-family:'Cinzel',serif; font-size:1.5rem; margin:0 0 10px; color:var(--cream);}
+.home-featured p{color:var(--cream-dim); font-size:0.92rem; line-height:1.6; margin:0 0 16px; max-width:640px;}
+.home-featured .hub-meta{font-size:0.74rem; color:var(--gold); font-weight:700;}
+.home-two{display:grid; grid-template-columns:1fr 1fr; gap:18px; margin-top:18px;}
+@media(max-width:760px){.home-two{grid-template-columns:1fr;}}
+.home-mini-card{background:var(--panel); border:1px solid var(--line); padding:22px 20px;}
+.home-mini-card .home-section-lbl{margin:0 0 14px;}
+.mini-news-item{padding:12px 0; border-bottom:1px solid var(--line);}
+.mini-news-item:last-child{border-bottom:none;}
+.mini-news-item .d{font-size:0.68rem; color:var(--gold); font-weight:700; letter-spacing:0.06em;}
+.mini-news-item h4{margin:4px 0 0; font-size:0.92rem; color:var(--cream);}
+.home-about-blurb p{color:var(--cream-dim); font-size:0.88rem; line-height:1.65; margin:0 0 12px;}
+.home-cta-row{display:flex; gap:12px; margin-top:16px; flex-wrap:wrap;}
+.btn{
+  font-family:'Cinzel',serif; font-size:0.78rem; letter-spacing:0.06em; font-weight:700;
+  padding:12px 22px; border:1px solid var(--line-strong); color:var(--gold-light);
+  background:linear-gradient(180deg, rgba(212,175,55,0.14), rgba(212,175,55,0.04));
+  display:inline-block; cursor:pointer;
+}
+.btn:hover{border-color:var(--gold); box-shadow:0 0 16px var(--gold-glow);}
+.btn.solid{background:linear-gradient(180deg, var(--gold-light), var(--gold)); color:#1a1208; border-color:var(--gold);}
+
+/* ===== NEWS PAGE ===== */
+.news-list{display:flex; flex-direction:column; gap:14px; margin-top:8px;}
+.news-card{
+  background:var(--panel); border:1px solid var(--line); padding:24px 24px;
+  position:relative; border-left:3px solid var(--gold);
+  box-shadow:0 2px 14px rgba(0,0,0,0.18);
+}
+.news-card .d{font-size:0.7rem; color:var(--gold); font-weight:700; letter-spacing:0.08em; margin-bottom:8px;}
+.news-card h3{margin:0 0 8px; font-family:'Cinzel',serif; font-size:1.15rem; color:var(--cream);}
+.news-card p{margin:0; color:var(--cream-dim); font-size:0.9rem; line-height:1.6;}
+.news-card .tag-pill{
+  display:inline-block; font-size:0.62rem; letter-spacing:0.08em; font-weight:700;
+  color:var(--gold-light); border:1px solid var(--line-strong); padding:3px 10px; margin-bottom:10px;
+}
+
+/* ===== ABOUT PAGE ===== */
+.about-block{margin:44px 0;}
+.about-block h2{font-family:'Cinzel',serif; font-size:1.2rem; color:var(--gold-light); margin:0 0 14px; letter-spacing:0.04em;}
+.about-block p{color:var(--cream-dim); font-size:0.96rem; line-height:1.75; margin:0 0 14px; max-width:760px;}
+.about-grid{display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:16px; margin-top:20px;}
+.about-crit{background:var(--panel); border:1px solid var(--line); padding:18px 18px;}
+.about-crit .n{font-family:'Cinzel',serif; color:var(--gold); font-size:0.8rem; margin-bottom:6px;}
+.about-crit h4{margin:0 0 8px; color:var(--cream); font-size:0.95rem;}
+.about-crit p{margin:0; font-size:0.83rem; color:var(--cream-dim); line-height:1.55;}
+
+/* ===== CONTACT PAGE ===== */
+.contact-wrap{display:grid; grid-template-columns:1.1fr 0.9fr; gap:26px; margin-top:12px;}
+@media(max-width:760px){.contact-wrap{grid-template-columns:1fr;}}
+.contact-form{background:var(--panel); border:1px solid var(--line); padding:26px;}
+.contact-form label{display:block; font-size:0.72rem; letter-spacing:0.06em; color:var(--gold-light); font-weight:700; margin:16px 0 6px;}
+.contact-form label:first-child{margin-top:0;}
+.contact-form input, .contact-form textarea{
+  width:100%; background:rgba(10,22,40,0.6); border:1px solid var(--line-strong); color:var(--cream);
+  padding:11px 13px; font-family:'Nunito Sans',sans-serif; font-size:0.9rem;
+}
+.contact-form textarea{min-height:120px; resize:vertical;}
+.contact-form input:focus, .contact-form textarea:focus{outline:1px solid var(--gold); border-color:var(--gold);}
+.contact-side{display:flex; flex-direction:column; gap:14px;}
+.contact-card{background:var(--panel-light); border:1px solid var(--line); padding:18px 20px;}
+.contact-card .label{color:var(--gold); display:block; margin-bottom:6px;}
+.contact-card div.val{color:var(--cream); font-weight:700; font-size:0.92rem;}
 </style>
 </head>
 <body>
-<nav class="nav">
+<div class="mobile-topbar">
   <a href="#/" class="logo">
-    <span class="hex"></span>
-    <span><b class="display">Arena Ten</b><small>MPL INDONESIA ALL-TIME</small></span>
+    <span class="shield"></span>
+    <b class="display">Arena Ten</b>
   </a>
-  <div class="tag mono">S1 – S17 · 2018–2026</div>
-</nav>
+  <button class="menu-btn" id="menuBtn" aria-label="Open menu"><span></span><span></span><span></span></button>
+</div>
+<div class="sidebar-backdrop" id="sidebarBackdrop"></div>
+<aside class="sidebar" id="sidebar">
+  <a href="#/" class="logo">
+    <span class="shield"></span>
+    <span><b class="display">Arena Ten</b><small>All-Time Rankings Archive</small></span>
+  </a>
+  <div class="tag">Est. 2026</div>
+  <nav class="sidebar-links" id="sidebarLinks">
+    <a href="#/" data-route="home"><span class="ic">&#8962;</span> Home</a>
+    <a href="#/rankings" data-route="rankings"><span class="ic">&#9819;</span> Rankings</a>
+    <a href="#/news" data-route="news"><span class="ic">&#128240;</span> News</a>
+    <a href="#/about" data-route="about"><span class="ic">&#9776;</span> About</a>
+    <a href="#/contact" data-route="contact"><span class="ic">&#9993;</span> Contact</a>
+  </nav>
+  <div class="sidebar-foot">Independent editorial rankings for competitive Mobile Legends: Bang Bang.</div>
+</aside>
+<button class="sidebar-edge-toggle" id="sidebarEdgeToggle" aria-label="Toggle sidebar" title="Toggle sidebar">◂</button>
 <main id="app"></main>
+<button class="back-to-top" id="backToTop" aria-label="Back to top" title="Back to top">↑</button>
 
 <script>
 const PLAYERS = [
 {
-  slug:"kairi", rank:1, name:"Kairi", team:"ONIC Esports", pos:"Jungler",
-  color:"#1E6FFF",
+  slug:"kairi", photo:"assets/players/kairi.jpg", rank:1, name:"Kairi", team:"ONIC Esports", pos:"Jungler",
+  color:"#FFD200",
   hook:"The Filipino import who became the defining individual talent of ONIC's dynasty — six MPL ID titles, back-to-back MVP hardware, and the mechanical peak that pushed ONIC past every rival for half a decade.",
   grades:{domestic:"A+", international:"A", longevity:"B+", individual:"A+", overall:"A+"},
   stats:[["Title dominance","98%"],["Individual hardware","97%"],["International results","93%"]],
   statBoxes:[["6","MPL ID titles"],["2x","Regular Season MVP"],["2x","Finals MVP"],["MSC '23","Champion"]],
   narrative:[
     "Kairi arrived in Indonesia in 2022 as one of the most hyped junglers in the region, and spent the next four years proving every bit of that hype justified. Across Seasons 10 through 16, he anchored ONIC's four-peat and then kept winning past it — six MPL ID titles in total, a run no jungler in league history has matched.",
-    "The individual hardware backs it up: two Regular Season MVP awards, two Grand Finals MVP awards, and six First Team selections. When ONIC needed a signature international run, Kairi delivered it too — MSC 2023, beating a stacked Blacklist International side 4-2, with a Snapdragon Pro Series title and Grand Finals MVP the same year.",
+    "The individual hardware backs it up: two Regular Season MVP awards, two Grand Finals MVP awards, and multiple First Team selections. When ONIC needed a signature international run, Kairi delivered it too — MSC 2023, beating a stacked Blacklist International side 4-2, with a Snapdragon Pro Series title and Grand Finals MVP the same year.",
     "What separates Kairi from a pure stat-stuffer is how often his best games came in the biggest moments — Grand Finals MVP in both S10 and S16, five years apart, is a rare kind of consistency at the very top of the format."
   ],
   achievements:["6x MPL Indonesia Champion (S10–S13, S15, S16)","2x MPL Indonesia Regular Season MVP (S10, S12)","2x MPL Indonesia Grand Finals MVP (S10, S16)","MSC 2023 Champion","Snapdragon Pro Series 2023 Champion & Finals MVP"]
 },
 {
-  slug:"kiboy", rank:2, name:"Kiboy", team:"ONIC Esports", pos:"Roamer",
-  color:"#1E6FFF",
+  slug:"kiboy", photo:"assets/players/kiboy.jpg", rank:2, name:"Kiboy", team:"ONIC Esports", pos:"Roamer",
+  color:"#FFD200",
   hook:"The most decorated player in MPL Indonesia history. Seven domestic titles, an MSC championship and Grand Finals MVP, and the defensive anchor role that made ONIC's dynasty possible from the back line.",
   grades:{domestic:"A+", international:"A-", longevity:"A-", individual:"A", overall:"A+"},
   stats:[["Title dominance","99%"],["Peak international run","94%"],["Sustained excellence","91%"]],
@@ -235,8 +639,8 @@ const PLAYERS = [
   achievements:["7x MPL Indonesia Champion (S8, S10–S13, S15, S16)","MPL Indonesia Grand Finals MVP (S12)","MSC 2023 Champion & Grand Finals MVP","M5 World Championship Runner-up"]
 },
 {
-  slug:"sanz", rank:3, name:"Sanz", team:"ONIC Esports", pos:"Mid Laner",
-  color:"#1E6FFF",
+  slug:"sanz", photo:"assets/players/sanz.jpg", rank:3, name:"Sanz", team:"ONIC Esports", pos:"Mid Laner",
+  color:"#FFD200",
   hook:"The architect of ONIC's four-peat. A jungler-turned-mid-laner whose positional switch in Season 10 unlocked the roster combination that dominated MPL Indonesia for four consecutive seasons.",
   grades:{domestic:"A+", international:"B+", longevity:"A", individual:"B+", overall:"A"},
   stats:[["Title dominance","97%"],["Positional versatility","92%"],["Career longevity","93%"]],
@@ -249,8 +653,8 @@ const PLAYERS = [
   achievements:["7x MPL Indonesia Champion (S8, S10–S13, S15, S16)","Architect of ONIC's Season 10–13 four-peat via mid lane transition","MSC 2023 Champion","One of the longest-tenured players on a single MPL ID roster (since Season 6)"]
 },
 {
-  slug:"cw", rank:4, name:"CW", team:"ONIC Esports", pos:"Mid / Gold Lane",
-  color:"#1E6FFF",
+  slug:"cw", photo:"assets/players/cw.jpg", rank:4, name:"CW", team:"ONIC Esports", pos:"Mid / Gold Lane",
+  color:"#FFD200",
   hook:"The fourth pillar of ONIC's core four-peat roster — a versatile laner whose consistency across multiple title runs made him just as essential to the dynasty as its bigger-name teammates.",
   grades:{domestic:"A", international:"B+", longevity:"A-", individual:"B+", overall:"A-"},
   stats:[["Title dominance","93%"],["Lane versatility","88%"],["Sustained excellence","89%"]],
@@ -263,8 +667,22 @@ const PLAYERS = [
   achievements:["Core member of ONIC's Season 10–13 four-peat","MSC 2023 Champion","Multiple MPL Indonesia title runs across ONIC's dynasty era"]
 },
 {
-  slug:"lemon", rank:5, name:"Lemon", team:"RRQ Hoshi", pos:"Mid Laner",
+  slug:"butss", photo:"assets/players/butss.jpg", rank:5, name:"Butss", team:"ONIC Esports", pos:"EXP Laner / Captain",
   color:"#FFD200",
+  hook:"ONIC's captain and the exp-lane anchor of the league's first three-peat — five MPL ID titles, an MSC championship, and the leadership that held the dynasty core together through four consecutive seasons of dominance.",
+  grades:{domestic:"A", international:"B+", longevity:"A-", individual:"B+", overall:"A"},
+  stats:[["Title dominance","93%"],["Leadership & captaincy","90%"],["International results","82%"]],
+  statBoxes:[["5","MPL ID titles"],["S10–S12","Three-peat captain"],["Reg. MVP","Season 8"],["MSC '23","Champion"]],
+  narrative:[
+    "Butss joined ONIC around Season 6, and within that season had already won Most Improved Player — the first sign of the steady, disciplined exp-lane game that would define his career. By Season 8 he was the team's captain and Regular Season MVP, closing that season with 85 MVP points, comfortably clear of the field, on the way to an MPL ID title.",
+    "When Kairi arrived and ONIC unlocked its four-peat core in Seasons 10 through 13, Butss was the veteran constant on the exp lane — the first player in MPL Indonesia history to win three consecutive domestic titles (S10–S12), part of the roster that also lifted MSC 2023 alongside CW, Sanz, and Kiboy.",
+    "His game isn't built on highlight-reel mechanics the way Kairi's is — it's built on map pressure, disciplined laning, and the kind of in-game leadership that keeps a dynasty roster aligned when the stakes are highest. Five MPL ID titles, an MSC championship, and captaincy through ONIC's greatest era make him the clear fifth name on this list."
+  ],
+  achievements:["5x MPL Indonesia Champion (S8, S10–S13)","First player to win MPL Indonesia three-peat (S10–S12) as captain","MPL Indonesia Regular Season MVP (S8, 85 MVP points)","MPL Indonesia Most Improved Player (S6)","MSC 2023 Champion"]
+},
+{
+  slug:"lemon", photo:"assets/players/lemon.jpg", rank:6, name:"Lemon", team:"RRQ Hoshi", pos:"Mid Laner",
+  color:"#E4772B",
   hook:"Nicknamed \"the Alien\" for his other-worldly mechanical skill, Lemon is the founding superstar of RRQ's dynasty — four MPL ID titles spanning the league's earliest era through its modern one.",
   grades:{domestic:"A", international:"C+", longevity:"A+", individual:"B+", overall:"A-"},
   stats:[["Title dominance across eras","91%"],["Mechanical peak","95%"],["Career longevity","97%"]],
@@ -277,50 +695,22 @@ const PLAYERS = [
   achievements:["4x MPL Indonesia Champion (S2, S5, S6, S9)","2x MPL Indonesia Regular Season MVP","First player to win MPL Indonesia titles across two separate dynasty eras","One of the longest and most decorated careers in league history"]
 },
 {
-  slug:"r7", rank:6, name:"R7", team:"RRQ Hoshi", pos:"Gold Lane",
-  color:"#FFD200",
-  hook:"RRQ's steady hand at gold lane through their most dominant stretch — three MPL ID titles and an international résumé that includes a SEA Games silver medal representing Indonesia.",
-  grades:{domestic:"B+", international:"B", longevity:"A-", individual:"C+", overall:"B+"},
-  stats:[["Consistency across titles","88%"],["International representation","82%"],["Career longevity","85%"]],
-  statBoxes:[["3","MPL ID titles"],["S5, S6, S9","Championship seasons"],["SEA Games","Silver Medal"],["3rd","M2 & M4"]],
+  slug:"oura", photo:"assets/players/oura.jpg", rank:7, name:"Oura", team:"EVOS Legends", pos:"EXP Laner",
+  color:"#1E6FFF",
+  hook:"\"The Father of Assassins.\" Two runner-up finishes as a rookie, a quiet Season 3, then a Season 4 breakthrough that led straight to Indonesia's only M-Series World Championship — and the Finals MVP trophy that came with it.",
+  grades:{domestic:"C+", international:"A+", longevity:"B", individual:"A", overall:"B+"},
+  stats:[["World Championship impact","98%"],["Domestic title output","62%"],["Legacy weight","93%"]],
+  statBoxes:[["M1 2019","World Champion"],["Finals MVP","M1 World Championship"],["1","MPL ID title"],["EVOS 'WORLD'","Roster"]],
   narrative:[
-    "R7 was the reliable engine of RRQ Hoshi's gold lane through their most successful stretch — three MPL ID titles across Seasons 5, 6, and 9, spanning both the Lemon back-to-back run and the later Season 9 championship.",
-    "His value showed up beyond the domestic league too. He represented Indonesia at the SEA Games, bringing home a silver medal, and was part of RRQ rosters that finished third at both the M2 and M4 World Championships — solid, if not title-winning, international showings that still speak to sustained relevance at the highest level.",
-    "R7's game was never about flash — it was about being the dependable core that let RRQ's flashier stars operate with a safety net underneath them."
+    "Oura's road to M1 wasn't instant. As a rookie in Season 1, he helped push EVOS all the way to the Grand Final before falling 3-2 to Team NXL — then did it again in Season 2, losing 3-0 to RRQ. Season 3 was quieter, with EVOS finishing in the lower half of the standings and no finals appearance at all.",
+    "Season 4 is where it all came together. Playing the aggressive, high-kill assassin style that earned him the nickname \"the Father of Assassins\" in the Indonesian scene, Oura helped EVOS finally break through — beating RRQ 3-1 for the franchise's first-ever MPL ID title, and with it, a spot at the very first M-Series World Championship.",
+    "At M1 2019, that same assassin identity carried straight through to the Finals MVP award as EVOS beat RRQ 4-3 to become Mobile Legends' first-ever World Champion. That title remains the only M-Series World Championship an Indonesian organization has ever won. His domestic résumé is comparatively thin — one MPL ID title, after two near-misses — but the M1 Finals MVP trophy, on top of a reputation as one of the era's defining EXP laners, cements his place on this list."
   ],
-  achievements:["3x MPL Indonesia Champion (S5, S6, S9)","SEA Games Silver Medalist (representing Indonesia)","3rd Place, M2 World Championship","3rd Place, M4 World Championship"]
+  achievements:["M1 World Championship Champion (2019) — first M-Series title for Indonesia","M1 World Championship Grand Finals MVP","1x MPL Indonesia Champion (S4)","MPL Indonesia Season 1 & Season 2 runner-up","Known as \"the Father of Assassins\" in the Indonesian MLBB scene","Member of EVOS Legends' legendary 'WORLD' roster"]
 },
 {
-  slug:"vyn", rank:7, name:"Vyn (Calvin)", team:"RRQ Hoshi / Bigetron Alpha", pos:"Roamer",
-  color:"#FFD200",
-  hook:"One of the most versatile support players the league has produced — a Finals MVP, an all-time assists record, and appearances across multiple World Championships spanning two different organizations.",
-  grades:{domestic:"B+", international:"B", longevity:"A", individual:"B+", overall:"B+"},
-  stats:[["Playmaking versatility","90%"],["Cross-org relevance","86%"],["International appearances","84%"]],
-  statBoxes:[["3","MPL ID titles"],["Finals MVP","Season 5"],["All-time","Assists record"],["M1 & MSC '22","Runner-up"]],
-  narrative:[
-    "Vyn's game has always been defined by adaptability — a roamer capable of playing pure tank, pure support, or a hybrid initiator role depending on what his draft needed, which is a big part of why he stayed relevant across a move from RRQ Hoshi to Bigetron Alpha.",
-    "He won three MPL ID titles with RRQ during their dynasty stretch, picking up a Grand Finals MVP award in Season 5, and set the league's all-time assists record along the way — a number that reflects just how much of RRQ's offense ran through his setups.",
-    "Internationally, Vyn made it to the M1 World Championship final as a runner-up and reached the MSC 2022 final as well, giving him appearances on the biggest possible stages even without an outright international title to show for it."
-  ],
-  achievements:["3x MPL Indonesia Champion (with RRQ Hoshi)","MPL Indonesia Grand Finals MVP (S5)","MPL Indonesia all-time assists record holder","M1 World Championship Runner-up · MSC 2022 Runner-up"]
-},
-{
-  slug:"oura", rank:8, name:"Oura", team:"EVOS Legends", pos:"Roamer",
-  color:"#ED1B34",
-  hook:"The individual face of Indonesia's only M-Series World Championship. Oura's Finals MVP performance at M1 2019 remains one of the signature moments in MPL Indonesia history.",
-  grades:{domestic:"B", international:"A+", longevity:"B", individual:"A", overall:"A-"},
-  stats:[["World Championship impact","98%"],["Domestic title output","78%"],["Legacy weight","93%"]],
-  statBoxes:[["M1 2019","World Champion"],["Finals MVP","M1 World Championship"],["2","MPL ID titles"],["EVOS 'WORLD'","Roster"]],
-  narrative:[
-    "When EVOS Legends beat RRQ Hoshi 4-3 in the M1 2019 Grand Final to become Mobile Legends' first-ever World Champion, it was Oura who walked away with the Finals MVP award — the single highest individual honor available in the sport, earned on its very first world stage.",
-    "That M1 title remains, to this day, the only M-Series World Championship an Indonesian organization has ever won. Every other Indonesian Finals MVP or MVP-caliber performance in this list happened on domestic or regional stages; Oura's happened on the biggest stage the game has.",
-    "He also won two MPL Indonesia domestic titles with EVOS (Seasons 4 and 7), but it's the M1 run — and the Finals MVP trophy that came with it — that cements his place as one of the defining names in Indonesian MLBB history."
-  ],
-  achievements:["M1 World Championship Champion (2019) — first M-Series title for Indonesia","M1 World Championship Grand Finals MVP","2x MPL Indonesia Champion (S4, S7)","Member of EVOS Legends' legendary 'WORLD' roster"]
-},
-{
-  slug:"luminaire", rank:9, name:"Luminaire", team:"EVOS Legends", pos:"Mid Laner",
-  color:"#ED1B34",
+  slug:"luminaire", photo:"assets/players/luminaire.jpg", rank:8, name:"Luminaire", team:"EVOS Legends", pos:"Mid Laner",
+  color:"#1E6FFF",
   hook:"The strategic backbone of EVOS's M1-winning roster who kept delivering after most of his teammates moved on — a Season 7 Finals MVP performance that proved the WORLD era wasn't a one-off.",
   grades:{domestic:"B+", international:"A", longevity:"B+", individual:"B+", overall:"A-"},
   stats:[["World Championship pedigree","93%"],["Sustained excellence","86%"],["Leadership under pressure","88%"]],
@@ -333,31 +723,251 @@ const PLAYERS = [
   achievements:["M1 World Championship Champion (2019)","MPL Indonesia Grand Finals MVP (S7)","2x MPL Indonesia Champion (S4, S7)","Member of EVOS Legends' legendary 'WORLD' roster"]
 },
 {
-  slug:"wannn", rank:10, name:"Wannn", team:"EVOS Legends", pos:"Jungler / Core",
-  color:"#ED1B34",
-  hook:"A World Champion forced to reinvent his entire game mid-tournament — when M1 opponents banned his signature heroes, Wannn adapted on the fly and helped carry EVOS to the title anyway.",
-  grades:{domestic:"B", international:"A-", longevity:"C+", individual:"B", overall:"B+"},
-  stats:[["Adaptability under pressure","91%"],["Peak tournament impact","89%"],["Career length","62%"]],
-  statBoxes:[["M1 2019","World Champion"],["2","MPL ID titles"],["S4, S7","Championship seasons"],["EVOS 'WORLD'","Roster"]],
+  slug:"vyn", photo:"assets/players/vyn.jpg", rank:9, name:"Vyn (Calvin)", team:"RRQ Hoshi / Bigetron Alpha", pos:"Roamer",
+  color:"#E4772B",
+  hook:"MPL Indonesia's most-traveled international veteran — four separate World Championship appearances (M1 through M4), an MPLI title, and years spent as RRQ's captain before handing the armband to R7.",
+  grades:{domestic:"B+", international:"A-", longevity:"A", individual:"B+", overall:"A-"},
+  stats:[["International appearances","95%"],["Playmaking versatility","90%"],["Career longevity","91%"]],
+  statBoxes:[["3","MPL ID titles"],["4x","World Championship appearances"],["MPLI 2020","Champion"],["Captain","RRQ, Seasons 5–8"]],
   narrative:[
-    "Wannn's M1 2019 run is one of the great adaptability stories in MPL Indonesia history. As EVOS advanced through the bracket, opponents began banning his go-to heroes outright — and rather than fold, Wannn reworked his entire hero pool mid-tournament and kept performing at a championship level anyway.",
-    "That flexibility carried into his domestic career too: two MPL ID titles with EVOS, in Season 4 and Season 7, on a roster that had to reinvent itself more than once as the WORLD-era core moved on.",
-    "His career was shorter than most names on this list — he stepped away from competitive play not long after EVOS's Season 7 title — but the concentration of achievement inside that window, capped by an actual World Championship, is hard to argue with."
+    "No player on this list has appeared on the World Championship stage more times than Vyn. He was there for M1 as a runner-up, M2 as a third-place finisher, M3, and M4 — also a third-place finish — a run of four consecutive World Championship appearances that no other Indonesian player has matched.",
+    "Domestically, he won three MPL ID titles with RRQ Hoshi (Seasons 5, 6, and 9) and captained the team for three straight seasons before eventually handing the armband to R7. He also lifted the MPLI 4 Nations Cup in 2020, adding another piece of international hardware to a résumé built on being everywhere, every year.",
+    "His game has always been defined by adaptability — a roamer capable of playing pure tank, pure support, or a hybrid initiator role depending on what his draft needed — which is a big part of why he stayed a fixture on the international stage for as long as he did, even after a move from RRQ to Bigetron Alpha."
   ],
-  achievements:["M1 World Championship Champion (2019)","2x MPL Indonesia Champion (S4, S7)","Member of EVOS Legends' legendary 'WORLD' roster","Adapted his entire hero pool mid-tournament to win M1 after opponents targeted his signature picks"]
+  achievements:["3x MPL Indonesia Champion (S5, S6, S9)","MPLI 4 Nations Cup Champion (2020)","4x World Championship participant (M1, M2, M3, M4)","MPL Indonesia all-time assists record holder","RRQ Hoshi captain, Seasons 5–8"]
+},
+{
+  slug:"rekt", photo:"assets/players/rekt.jpg", rank:10, name:"Rekt", team:"EVOS Legends", pos:"Gold Lane → Roamer",
+  color:"#1E6FFF",
+  hook:"One of the longest careers in MPL Indonesia history — a marksman-turned-tank who won a World Championship, then reinvented his entire role and kept winning.",
+  grades:{domestic:"B+", international:"A-", longevity:"A", individual:"B+", overall:"B+"},
+  stats:[["Career longevity","95%"],["Positional versatility","89%"],["World Championship pedigree","88%"]],
+  statBoxes:[["M1 2019","World Champion"],["2","MPL ID titles"],["S1–S9","Every season played"],["Gold Lane → Roamer","Position switch"]],
+  narrative:[
+    "Rekt's career is one of the longest and most unusual in MPL Indonesia history. He debuted as a gold laner for Bigetron in Season 1, moved to Louvre Esports for Season 2, then joined EVOS Legends in Season 3 — and stayed there for the rest of his career, playing every MPL ID season through Season 9.",
+    "His signature run came at EVOS's peak. As a sharp-shooting marksman known as \"the farmer\" for his fast farming speed, Rekt was a core piece of EVOS's Season 4 championship roster, then helped the team win the inaugural M1 2019 World Championship as part of the legendary WORLD roster alongside Oura, Wannn, and Luminaire.",
+    "He wasn't done reinventing himself. During Season 7, with EVOS short at tank, Rekt moved into the roamer role mid-season and made it work — the shift became permanent, capped off with a Best Roamer award for that season, and EVOS went on to win the title too. Going from a World Championship-winning marksman to a title-winning, Best Roamer-honored tank in a completely different role, without ever leaving the org, is a rare kind of career versatility."
+  ],
+  achievements:["M1 World Championship Champion (2019)","2x MPL Indonesia Champion (S4, S7)","MPL Indonesia Best Roamer (S7)","One of the very few multi-role players to start at both gold lane and roamer for a title-winning roster","One of the longest careers in league history, playing MPL Indonesia Seasons 1 through 9","Member of EVOS Legends' legendary 'WORLD' roster"]
 }
 ];
 
 const HONORABLE_MENTIONS = [
   {
-    name:"Rekt", team:"EVOS Legends", tag:"World Champion · Positional Convert",
-    color:"#ED1B34",
-    text:"Won M1 2019 with EVOS's legendary WORLD roster, then made a rare mid-career switch from gold laner to roamer — and kept winning, picking up a second MPL ID title (S4 Finals MVP) and a third (S7) in his new role. Two MPL ID titles and a World Championship, playing two completely different positions."
+    name:"R7", photo:"assets/players/r7.jpg", team:"RRQ Hoshi", tag:"3x MPL Champion · RRQ Captain",
+    color:"#E4772B",
+    hook:"RRQ's steady exp-lane engine through three championship seasons — a captain who kept the Hoshi dynasty's back line reliable while Lemon and Vyn took the spotlight.",
+    accomplishments:[
+      "3x MPL Indonesia Champion (S5, S6, S9)",
+      "SEA Games Silver Medalist (representing Indonesia)",
+      "3rd Place, M2 World Championship",
+      "3rd Place, M4 World Championship",
+      "RRQ Hoshi captain from Season 8 onward"
+    ],
+    storyline:"R7 was the player RRQ could always count on. He inherited the captain's armband from Vyn in Season 8 and held the exp lane through RRQ's back-to-back titles in Seasons 5 and 6, then stayed for the Season 9 championship run years later — a rare kind of organizational loyalty in a league defined by roster churn. On the world stage he never broke through to a final, but third-place finishes at M2 and M4 plus a SEA Games silver medal showed he belonged among Indonesia's internationally tested veterans.",
+    whyNotCut:"Three MPL ID titles and real international experience put R7 close — but this list rewards peak individual impact and championship-defining moments, and R7 was always the stabilizer rather than the star. He never won Finals or Regular Season MVP hardware, never captained a world-title run, and his three titles came as part of rosters where Lemon, Vyn, or both were the clear headliners. Butss's five titles and ONIC captaincy at #5, plus Rekt's M1 trophy and rare positional reinvention at #10, edged him out of the final spots."
   },
   {
-    name:"LJ", team:"NXL → RRQ Hoshi → EVOS", tag:"4x MPL Champion · 3 Organizations",
-    color:"#C9D6E3",
-    text:"MPL Indonesia's most decorated cross-org journeyman: won Season 1 with Team NXL, then Seasons 5 and 6 with RRQ Hoshi, then Season 7 with EVOS Legends — four domestic titles with three different organizations, a feat nobody else in league history has matched. Also won the MPLI 4 Nations Cup and finished runner-up at M1 2019."
+    name:"LJ", photo:"assets/players/lj.jpg", team:"NXL → RRQ Hoshi → EVOS Legends", tag:"4x MPL Champion · 3 Organizations",
+    color:"#C9AE7A",
+    hook:"The only player in MPL Indonesia history to win four domestic titles across three different organizations — a jungler whose trophy case spans the league's entire competitive timeline.",
+    accomplishments:[
+      "4x MPL Indonesia Champion (S1 with NXL, S5 & S6 with RRQ, S7 with EVOS)",
+      "Titles won with three separate organizations — a league-first feat",
+      "MPLI 4 Nations Cup Champion (2020)",
+      "M1 World Championship Runner-up (2019) with EVOS",
+      "Jungler on RRQ's back-to-back dynasty and EVOS's post-M1 title run"
+    ],
+    storyline:"LJ's résumé reads like a history of MPL Indonesia itself. He won the very first season with Team NXL, then jumped to RRQ Hoshi and collected back-to-back titles in Seasons 5 and 6 as part of Lemon's golden run. When EVOS needed a jungler for their post-M1 rebuild, LJ moved again — and won Season 7, giving him a fourth domestic title with a third org. He also reached the M1 2019 Grand Final as EVOS's jungler, falling one series short of back-to-back world titles with the WORLD roster.",
+    whyNotCut:"Four titles across three orgs is a genuinely unique achievement — but LJ was rarely the best player on his championship rosters. He functioned as a high-level role player who fit elite systems rather than a franchise-defining talent who carried teams to glory. He has no Regular Season or Finals MVP awards, no world championship, and his peak international result is an M1 runner-up finish where Oura, Luminaire, and Wannn drew most of the credit. The names above him either won more titles as core pillars (Butss, the ONIC four) or left a sharper individual legacy on the biggest stages."
+  }
+];
+
+const PLAYERS_MPL = [
+{
+  slug:"mpl-sanz", photo:"assets/players/sanz.jpg", rank:1, name:"Sanz", team:"ONIC Esports", pos:"Mid Laner",
+  color:"#FFD200",
+  hook:"The pick for #1: seven titles tied for most all-time, the longest currently-active career of anyone on this list — still fighting for the Regular Season MVP race in Season 17 — and the single most consequential meta decision behind the entire ONIC dynasty.",
+  grades:{teamTrophies:"A+", individualTrophies:"C+", longevity:"A+", metaImpact:"A+", nicknames:"D", statsProof:"A-", overall:"A+"},
+  stats:[["Career length (S6–S17+)","98%"],["Trophy dominance","97%"],["Roster-shaping impact","96%"]],
+  statBoxes:[["7","MPL ID titles"],["S6–S17+","Career span, one org"],["S10","Position switch season"],["2nd, S17","MVP race runner-up, age 24+"]],
+  narrative:[
+    "Sanz has been on ONIC's active roster since Season 6, and as of Season 17 he was still finishing on the podium of the Regular Season MVP race — a career that has now stretched well past a decade with a single organization, longer than anyone else's still-active run on this list. It's also his Season 10 move from jungle to mid lane that unlocked the exact core combination that went on to four-peat — arguably the single most consequential meta decision by any player in this ranking, and the reason he tops it.",
+    "He's never actually won a season-level MVP trophy, despite years of near-misses — runner-up in the Season 7 MVP race, multiple single-game MVP performances including two games in the Season 17 Grand Finals, and a razor-thin second place to Moreno in the Season 17 Regular Season MVP standings (107 points to 109). But seven titles tied for the most in league history, the longest active tenure of anyone here, and the four-peat's defining meta shift outweigh a thinner individual trophy case."
+  ],
+  achievements:["7x MPL Indonesia Champion (S8, S10–S13, S15, S16)","Jungler-to-mid-lane switch (S10) directly enabled ONIC's four-peat core","Longest still-active MPL Indonesia career of any player, competing from Season 6 through at least Season 17","Multiple single-game MVP performances and top-3 Regular Season MVP finishes, without ever winning the season award outright"]
+},
+{
+  slug:"mpl-kiboy", photo:"assets/players/kiboy.jpg", rank:2, name:"Kiboy", team:"ONIC Esports", pos:"Roamer",
+  color:"#FFD200",
+  hook:"A correction on the record: Kiboy has one Finals MVP, not two — Season 12, not Season 13 (that one belongs to CW). Seven titles tied for most all-time, a debut stretching back to Season 7, and being the one constant across three separate ONIC championship eras still puts him firmly in second.",
+  grades:{teamTrophies:"A+", individualTrophies:"B", longevity:"A", metaImpact:"A-", nicknames:"C", statsProof:"A", overall:"A"},
+  stats:[["Trophy dominance","99%"],["Sustained relevance (S7–S16)","93%"],["Statistical case","93%"]],
+  statBoxes:[["7","MPL ID titles"],["1","Finals MVP (S12)"],["S7–S16","Career span, one org"],["3","Separate ONIC title eras"]],
+  narrative:[
+    "Kiboy's case barely changes shape when you strip out everything outside the MPL Indonesia bracket, because almost his entire résumé was built inside it. Seven domestic titles, tied for the most in league history, ties him with Sanz and CW — but he's the only one of the three who was a lineup mainstay from Season 7 clear through to the Season 16 title, spanning ONIC's original S8 breakthrough, the S10–S13 four-peat, and the S15–S16 three-peat as three genuinely distinct championship eras.",
+    "His individual hardware is thinner than an earlier version of this list gave him credit for: one Grand Finals MVP, in the Season 12 three-peat clincher, plus a First Team selection that same season — not two Finals MVPs. That puts him behind CW and well behind Kairi on raw individual trophies, and just behind Sanz overall once longevity and meta impact are weighed properly. Tied-highest trophy count and a read-and-engage roaming style that became the template every other roamer eventually had to answer still make him an easy #2."
+  ],
+  achievements:["7x MPL Indonesia Champion (S8, S10–S13, S15, S16)","MPL Indonesia Grand Finals MVP (S12)","MPL Indonesia First Team Winner, Roamer (S12)","Active on ONIC's roster from Season 7 through Season 16, spanning three separate championship eras"]
+},
+{
+  slug:"mpl-cw", photo:"assets/players/cw.jpg", rank:4, name:"CW", team:"ONIC Esports", pos:"Mid / Gold Lane",
+  color:"#FFD200",
+  hook:"A correction worth making loudly: CW isn't the empty-handed fifth wheel of the ONIC core, he's a two-time Grand Finals MVP with one of the longest tenures in the dynasty — and one of only four players ever to complete an MPL Indonesia four-peat. Where exactly he lands against Butss below him is genuinely a matter of what you value more.",
+  grades:{teamTrophies:"A+", individualTrophies:"A-", longevity:"A", metaImpact:"B+", nicknames:"D", statsProof:"A", overall:"A-"},
+  stats:[["Trophy dominance","97%"],["Finals-stage individual hardware","93%"],["Tenure (S5–S16)","90%"]],
+  statBoxes:[["7","MPL ID titles"],["2","Grand Finals MVP (S8, S13)"],["S5","Earliest ONIC core debut"],["1st","To complete an MPL four-peat"]],
+  narrative:[
+    "CW's file needed a real rewrite once his actual record came into view. He's a two-time MPL Indonesia Grand Finals MVP — Season 8, the trophy that first established ONIC as a genuine contender, and Season 13, the win that made him and his four-peat teammates (Kairi, Sanz, and Kiboy) the first core in league history to string together four straight titles. He also picked up a playoff-stage series MVP in Season 9, on top of that.",
+    "Seven MPL Indonesia championships tie him with Kiboy and Sanz for the most of anyone on this list, and his playing career — starting in Season 5, a season before Sanz's own run began — is the earliest debut of the entire dynasty core. What keeps him out of the top three is a mix of things: Sanz stayed active longer (CW moved into ONIC's coaching staff around Season 16, Sanz kept competing through at least Season 17), and Kairi's individual trophy haul simply outweighs his. Below him, the gap to Butss is a genuinely close call — CW brings more hardware and titles, Butss brings the captaincy and leadership case, and reasonable people can rank them either way."
+  ],
+  achievements:["7x MPL Indonesia Champion (S8, S10–S13, S15, S16)","2x MPL Indonesia Grand Finals MVP (S8 and S13)","1x Playoff-stage match MVP (S9, vs. AURA Fire)","First player in MPL Indonesia history to complete a four-peat (S10–S13), alongside Kairi, Sanz, and Kiboy","Longest playing tenure of ONIC's dynasty core (debut Season 5), later transitioning into ONIC's coaching staff"]
+},
+{
+  slug:"mpl-kairi", photo:"assets/players/kairi.jpg", rank:3, name:"Kairi", team:"ONIC Esports", pos:"Jungler",
+  color:"#FFD200",
+  hook:"Re-checking the individual hardware only strengthens the case: Kairi's two Regular Season MVPs, two Grand Finals MVPs, and six First Team selections make him the single most decorated individual player in MPL Indonesia's modern era — enough to place him above CW despite one fewer title.",
+  grades:{teamTrophies:"A", individualTrophies:"A+", longevity:"B", metaImpact:"A", nicknames:"D+", statsProof:"A", overall:"A"},
+  stats:[["Individual hardware","98%"],["Trophy dominance","93%"],["Meta-defining play","90%"]],
+  statBoxes:[["6","MPL ID titles"],["4","Season MVP awards (Reg. + Finals)"],["6x","MPL ID First Team"],["Jungle","Carry role redefined"]],
+  narrative:[
+    "No player has walked away with more individual MVP hardware in MPL Indonesia than Kairi: two Regular Season MVPs, two Grand Finals MVPs (five years apart), and six First Team selections. That's still the deepest individual trophy case of anyone on this list, CW's two Finals MVPs included — and it's enough to edge CW out for third place even with one fewer team title.",
+    "His jungle-carry approach, arriving in Season 10, pushed the position away from a pure setup role and toward one that could win games outright — a shift the rest of the league spent years catching up to. The only real mark against him on a pure-MPL scorecard is tenure: four title-winning years is short next to CW and Sanz's decade-plus runs in the same core."
+  ],
+  achievements:["6x MPL Indonesia Champion (S10–S13, S15, S16)","2x MPL Indonesia Regular Season MVP (S10, S12)","2x MPL Indonesia Grand Finals MVP (S10, S16)","6x MPL Indonesia First Team Winner (S10–S12, S15, S16), 1x Second Team (S13)","Credited with popularizing the modern aggressive jungle-carry playstyle in MPL ID"]
+},
+{
+  slug:"mpl-butss", photo:"assets/players/butss.jpg", rank:5, name:"Butss", team:"ONIC Esports", pos:"EXP Laner / Captain",
+  color:"#FFD200",
+  hook:"The first player to captain a three-peat in MPL Indonesia history — five titles, a Regular Season MVP, and a Most Improved Player award that trace a complete arc from prospect to dynasty captain. His case against CW above him is a genuine coin flip depending on how much captaincy and leadership weigh against raw hardware.",
+  grades:{teamTrophies:"A-", individualTrophies:"B+", longevity:"A-", metaImpact:"B", nicknames:"D", statsProof:"B+", overall:"A-"},
+  stats:[["Trophy dominance","91%"],["Captaincy record","93%"],["Individual hardware","85%"]],
+  statBoxes:[["5","MPL ID titles"],["S10–S12","First-ever three-peat"],["Reg. MVP","Season 8, 85 pts"],["MIP","Season 6"]],
+  narrative:[
+    "Butss's MPL-only résumé traces a full career arc: Most Improved Player in Season 6, Regular Season MVP with 85 points in Season 8, then captain of the first three-peat (S10–S12) in league history once ONIC's four-peat core came together.",
+    "His game was never built for a nickname or a highlight reel — it's built on map pressure and disciplined laning — but five domestic titles and a trophy case that includes both individual and captaincy hardware is a genuinely complete case on pure MPL terms. He sits just below CW here mainly on trophy count and Finals MVP hardware, but if leadership and captaincy carry more weight for you, the two are close enough to swap."
+  ],
+  achievements:["5x MPL Indonesia Champion (S8, S10–S13)","First captain to win an MPL Indonesia three-peat (S10–S12)","MPL Indonesia Regular Season MVP (S8, 85 MVP points)","MPL Indonesia Most Improved Player (S6)"]
+},
+{
+  slug:"mpl-lemon", photo:"assets/players/lemon.jpg", rank:6, name:"Lemon", team:"RRQ Hoshi", pos:"Mid Laner",
+  color:"#E4772B",
+  hook:"\"The Alien.\" The most iconic nickname in MPL Indonesia history, earned across a career that bridges the league's very first seasons to its modern one — four titles, two MVPs, two separate championship eras.",
+  grades:{teamTrophies:"B+", individualTrophies:"A-", longevity:"A", metaImpact:"A", nicknames:"A+", statsProof:"A-", overall:"A-"},
+  stats:[["Career span (S2–S9)","93%"],["Nickname recognition","96%"],["Mechanical influence on meta","93%"]],
+  statBoxes:[["4","MPL ID titles"],["S2, S5, S6, S9","Championship seasons"],["2x","Regular Season MVP"],["'The Alien'","MPL nickname"]],
+  narrative:[
+    "No player's name is more synonymous with MPL Indonesia's mid lane than Lemon's, and \"the Alien\" isn't a manufactured tag — it's what the league itself called him after back-to-back titles in Seasons 5 and 6, when his mechanics were so far ahead of the format that opposing coaches drafted specifically to neutralize him.",
+    "His trophy count (four) is lower than the ONIC block above him, but almost nobody else on this list has a career that touches the league's founding era and its modern one. Two Regular Season MVPs and a nickname that's outlasted three separate eras of MPL Indonesia make his case as much about legacy as hardware."
+  ],
+  achievements:["4x MPL Indonesia Champion (S2, S5, S6, S9)","2x MPL Indonesia Regular Season MVP","Career spans MPL Indonesia's founding era through its modern one","Nicknamed \"the Alien\" by the Indonesian MLBB scene for his mechanical skill"]
+},
+{
+  slug:"mpl-alberttt", photo:"assets/players/alberttt.jpg", rank:7, name:"Alberttt", team:"RRQ Hoshi / ONIC Esports / EVOS", pos:"Jungler",
+  color:"#E4772B",
+  hook:"\"Baby Alien.\" A correction that changes his whole case: Alberttt didn't stop at one title. He left RRQ for ONIC in mid-2023 and won again in Season 12 and Season 13 — four championships across two rival organizations, on top of three individual MVP awards.",
+  grades:{teamTrophies:"A-", individualTrophies:"A", longevity:"A-", metaImpact:"B+", nicknames:"B+", statsProof:"A-", overall:"A-"},
+  stats:[["Individual hardware","93%"],["Multi-org championship feat","92%"],["Career length (S6–present)","88%"]],
+  statBoxes:[["4","MPL ID titles"],["2","Rival orgs won with (RRQ, ONIC)"],["3","MVP awards (2x Reg. + Finals)"],["'Baby Alien'","MPL nickname"]],
+  narrative:[
+    "Alberttt's file needed a real correction: this isn't a one-title résumé leaning entirely on individual hardware. He won Season 6 and Season 9 with RRQ Hoshi, then left for ONIC Esports in mid-2023 and picked up rings in both Season 12 and Season 13 — four MPL Indonesia championships across two rival organizations, a feat matched by very few in league history.",
+    "The individual case was always strong and still is: Regular Season MVP in Season 7, just one year after his debut, and again in Season 9, plus Finals MVP for the Season 6 title. His nickname, \"Baby Alien,\" comes from the game he held RRQ's base alone with Wanwan against Alter Ego in the Season 6 decider — a direct callback to Lemon's own legendary status. Four titles, three major awards, a real earned nickname, and a career that's still active years later (he was still winning match MVPs for EVOS as of Season 18) is a far deeper résumé than a single-title placeholder ever gave him credit for."
+  ],
+  achievements:["4x MPL Indonesia Champion — with two different organizations (RRQ Hoshi S6 & S9, ONIC Esports S12 & S13)","MPL Indonesia Grand Finals MVP (S6)","2x MPL Indonesia Regular Season MVP (S7, S9)","Nicknamed \"Baby Alien\" for his solo Wanwan base-defense in the S6 Grand Final","Most kills in MPL Indonesia Season 8 (297) and highest KDA in Season 6 (6.4)"]
+},
+{
+  slug:"mpl-lj", photo:"assets/players/lj.jpg", rank:8, name:"LJ", team:"NXL → RRQ Hoshi → EVOS Legends", pos:"Jungler",
+  color:"#C9AE7A",
+  hook:"The only player to win MPL Indonesia titles with three different organizations — four domestic championships that, on a trophies-first list, comfortably outweigh a flashier single-season case.",
+  grades:{teamTrophies:"A-", individualTrophies:"D", longevity:"B+", metaImpact:"B", nicknames:"D", statsProof:"B+", overall:"B"},
+  stats:[["Titles across orgs","90%"],["Adaptability to new systems","85%"],["Individual hardware","30%"]],
+  statBoxes:[["4","MPL ID titles"],["3","Different champion orgs"],["S1","Very first champion"],["S5, S6, S7","Additional titles"]],
+  narrative:[
+    "LJ won the very first MPL Indonesia season with Team NXL, then went on to win again with RRQ Hoshi (S5, S6) and again with EVOS Legends (S7) — four domestic titles with three different organizations, a feat almost no one else in league history has matched. On a list built around team trophies first, that record alone earns him a firm place in the top ten.",
+    "He's never carried individual MVP hardware and was rarely his roster's headline talent, which is why he sits just behind Alberttt here — a similarly rare multi-org champion, but with three real individual awards and a nickname to back it up, next to LJ's zero. Being the jungler good enough to fit three separate championship systems across the league's earliest and most chaotic seasons is still worth a firm top-ten spot on its own."
+  ],
+  achievements:["4x MPL Indonesia Champion — with three different organizations (NXL, RRQ Hoshi, EVOS Legends)","MPL Indonesia Season 1 Champion, the league's inaugural title","Jungler on both RRQ's early dynasty run and EVOS's post-M1 rebuild"]
+},
+{
+  slug:"mpl-vyn", photo:"assets/players/vyn.jpg", rank:9, name:"Vyn (Calvin)", team:"RRQ Hoshi / Bigetron Alpha", pos:"Roamer",
+  color:"#E4772B",
+  hook:"MPL Indonesia's all-time assists record holder and the captain who founded RRQ's back-to-back dynasty — three domestic titles backed by the kind of hard statistical record this list explicitly asks for.",
+  grades:{teamTrophies:"B+", individualTrophies:"C+", longevity:"A-", metaImpact:"B", nicknames:"D", statsProof:"A-", overall:"B"},
+  stats:[["Assists record","94%"],["Captaincy tenure","88%"],["Role versatility","89%"]],
+  statBoxes:[["3","MPL ID titles"],["Record","All-time assists leader"],["Captain","RRQ, S5–S8"],["3","Playstyles mastered"]],
+  narrative:[
+    "Vyn captained RRQ Hoshi through three domestic titles, including the league's first-ever back-to-back run in Seasons 5 and 6, before handing the armband off ahead of Season 9. He's never won an MVP award, but he holds MPL Indonesia's all-time assists record — as concrete a piece of \"stats proof\" as this list can ask for.",
+    "What made him valuable within the meta was flexibility: capable of playing pure tank, pure support, or a hybrid initiator role depending on what a draft needed, an adaptability that kept him a starting-caliber roamer across multiple seasons. Being the captain who actually founded that first back-to-back title run, rather than inheriting it, keeps him a step ahead of thinner résumés below him — even with one fewer title than the multi-org champions above him."
+  ],
+  achievements:["3x MPL Indonesia Champion (S5, S6, S9)","MPL Indonesia all-time assists record holder","RRQ Hoshi captain, Seasons 5–8, including the league's first-ever back-to-back title run","Recognized for tank/support/hybrid roamer versatility across eras"]
+},
+{
+  slug:"mpl-skylar", photo:"assets/players/skylar.jpg", rank:10, name:"Skylar", team:"RRQ Hoshi / ONIC Esports", pos:"Gold Laner",
+  color:"#E4772B",
+  hook:"Two MPL Indonesia titles with two different powerhouse organizations, spanning nearly a decade — a redemption arc built on outlasting every dip in form the league threw at him.",
+  grades:{teamTrophies:"B", individualTrophies:"D", longevity:"A+", metaImpact:"B-", nicknames:"C", statsProof:"B", overall:"B-"},
+  stats:[["Career span (S7–S16)","94%"],["Two-org championship feat","88%"],["Consistency across dips","82%"]],
+  statBoxes:[["2","MPL ID titles"],["2","Different champion orgs"],["S9, S16","Championship seasons"],["S8, S14","Runner-up finishes"]],
+  narrative:[
+    "Skylar's MPL Indonesia résumé is a genuine up-and-down story: a #5–6 finish in Season 7, runner-up in Season 8, then his first title with RRQ Hoshi in Season 9. A quieter stretch followed — #4 in Season 11, #5–6 in Season 13 — before he helped drag RRQ back to a Season 14 runner-up finish.",
+    "Then came the second act: after a break from competition, Skylar returned with ONIC Esports and lifted the MPL ID trophy again in Season 16 — becoming a champion with two separate powerhouse organizations, years apart, in a story that closely mirrors Alberttt's own RRQ-to-ONIC path, just with two titles instead of four. He's never carried an MVP trophy, which is what keeps him at the very bottom of this top ten rather than higher."
+  ],
+  achievements:["2x MPL Indonesia Champion — with two different organizations (RRQ Hoshi S9, ONIC Esports S16)","MPL Indonesia Season 8 & Season 14 runner-up","Career spans Season 7 through at least Season 16, one of the longest in league history"]
+}
+];
+
+const HONORABLE_MENTIONS_MPL = [
+  {
+    name:"R7", photo:"assets/players/r7.jpg", team:"RRQ Hoshi", tag:"3x MPL Champion · First Back-to-Back Winner",
+    color:"#E4772B",
+    hook:"Part of the very first back-to-back championship core in MPL Indonesia history, and captain of a third title years later — a résumé that's genuinely close, just a step behind the group ahead of him.",
+    accomplishments:[
+      "3x MPL Indonesia Champion (S5, S6, S9)",
+      "Part of the first roster to win MPL Indonesia back-to-back (S5–S6), alongside Vyn, Lemon, and XINNN",
+      "RRQ Hoshi captain from Season 9 onward, inheriting the armband from Vyn",
+      "No individual MVP awards to date"
+    ],
+    storyline:"R7 was part of the exact RRQ Hoshi core that became the first roster in MPL Indonesia history to win the title back-to-back, then inherited the captaincy from Vyn ahead of Season 9 and led RRQ to a third championship — showing the résumé wasn't a one-era fluke.",
+    whyNotCut:"Three titles across two championship windows is real, but Vyn founded that same core as captain rather than inheriting it, and Alberttt now has four titles across two rival organizations plus real individual hardware. Against that group, R7's case comes up just short."
+  },
+  {
+    name:"Rekt", photo:"assets/players/rekt.jpg", team:"EVOS Legends", tag:"2x MPL Champion · \"The Farmer\"",
+    color:"#1E6FFF",
+    hook:"\"The Farmer.\" The longest single-league career on the entire board by seasons played, and the only player on this list to fully reinvent his role mid-career.",
+    accomplishments:[
+      "2x MPL Indonesia Champion (S4, S7)",
+      "MPL Indonesia Best Roamer (S7), the season he switched roles",
+      "Played every MPL Indonesia season from S1 through S9",
+      "Nicknamed \"the farmer\" for his signature fast-farming marksman play"
+    ],
+    storyline:"Rekt played every MPL Indonesia season from the league's first through its ninth, then shifted from a farming-focused marksman into a full-time roamer mid-career in Season 7 — and won a Best Roamer award and a title in the very role he'd just switched into.",
+    whyNotCut:"Two titles is the thinnest trophy count of anyone seriously considered for this list, and against Skylar's two titles with two different organizations, or Alberttt's four titles across two rival organizations, a longevity-and-reinvention story alone doesn't quite clear the bar this time."
+  },
+  {
+    name:"Moreno", photo:"assets/players/moreno.jpg", team:"Bigetron by Vitality", tag:"1x MPL Champion · S17 Finals MVP",
+    color:"#7FE0C4",
+    hook:"The player who ended a 17-season title drought. Moreno's Season 17 Finals MVP broke ONIC's dynasty in the most dramatic way possible — but it's one title from a career that's only just begun.",
+    accomplishments:[
+      "1x MPL Indonesia Champion (S17) — Bigetron by Vitality's first-ever MPL ID title",
+      "MPL Indonesia Grand Finals MVP (S17)",
+      "Finished at or near the top of the Season 17 Regular Season MVP leaderboard, narrowly ahead of Sanz and Kairi",
+      "Central figure in the biggest underdog title run in recent league history"
+    ],
+    storyline:"Bigetron by Vitality had never won an MPL ID championship in seventeen seasons. Moreno's Season 17 Grand Finals MVP performance, in a 4-1 win over ONIC, ended that drought outright — one of the most dramatic single-season stories the league has produced.",
+    whyNotCut:"It's a genuinely great moment, but this is exactly the case a trophies-and-longevity list is designed to weigh carefully: one title, one big season, and a career still in its early years. Against LJ's four titles, Vyn's three as the captain who founded that first back-to-back run, or Skylar's two-organization résumé — each backed by years of sustained relevance — a single spectacular season isn't yet enough to crack the top ten, however good the story is."
+  },
+  {
+    name:"Celiboy", photo:"assets/players/celiboy.jpg", team:"Alter Ego", tag:"MPL Kill-Record Holder · No MPL Title",
+    color:"#8B6BB8",
+    hook:"\"The Miracle Boy.\" MPL Indonesia's all-time kill leader and one of the league's most beloved names — but a résumé this list can't fully credit without a championship behind it.",
+    accomplishments:[
+      "MPL Indonesia all-time kill record holder (1,544 career kills)",
+      "Most kills in a single MPL Indonesia season, twice (S4: 215, S6: 283)",
+      "3rd place finish, MPL Indonesia Season 4 playoffs (rookie season, age 16)",
+      "Runner-up, MPL Indonesia Season 6 (lost 3-2 to RRQ Hoshi in the Grand Final)"
+    ],
+    storyline:"Celiboy debuted as a 16-year-old rookie in Season 4 and immediately became the league's most electric young star, earning the nickname \"the Miracle Boy\" for carrying Alter Ego to a 3rd-place finish. He came agonizingly close to a title in Season 6, falling 3-2 to RRQ Hoshi in the Grand Final, and finished his career as MPL Indonesia's all-time kill leader.",
+    whyNotCut:"Worth being upfront about: on the record, Celiboy never actually won an MPL Indonesia championship — his best finish was a Season 6 runner-up. That's a real problem for a list built around \"team trophies to back it up.\" His nickname and stat records are genuinely elite, but without a title, he doesn't clear the bar this specific criteria set sets, no matter how beloved his highlight reel is."
   }
 ];
 
@@ -370,69 +980,245 @@ const GRADE_COLOR = g => {
   return "var(--d)";
 };
 
-function renderHome(){
-  const rows = PLAYERS.slice().sort((a,b)=>a.rank-b.rank).map(p=>`
-    <a href="#/player/${p.slug}" class="row" style="--team:${p.color}">
-      <div class="rank-hex">${p.rank}</div>
-      <div class="row-name">
-        <h3>${p.name}</h3>
-        <div class="sub">${p.team} · ${p.pos}</div>
-      </div>
-      <div class="row-hook">${p.hook}</div>
-      <div class="grade-pill" style="--grade-color:${GRADE_COLOR(p.grades.overall)}">${p.grades.overall}</div>
+const RANKINGS = [
+  {
+    id:"mpl-id-all-time",
+    badge:"MPL Indonesia · Est. 2018",
+    title:"Top 10 Indonesian Mobile Legends Players of All Time",
+    blurb:"A ranked, graded breakdown of the ten greatest Indonesian Mobile Legends: Bang Bang players ever — weighted across domestic titles, international results, career longevity, and individual awards.",
+    meta:"10 ranked · 2 honorable mentions · Seasons 1–17",
+    players:PLAYERS, honorable:HONORABLE_MENTIONS,
+    criteria:[["domestic","Domestic Titles"],["international","International"],["longevity","Longevity"],["individual","Individual"]],
+    metaRow:[["Most Titles","Kiboy (7)"],["World Champion","EVOS Legends (M1 '19)"],["Most Decorated Org","ONIC Esports (8 titles)"],["S17 Champion","Bigetron by Vitality"]],
+    method:[["DOMESTIC TITLES","MPL Indonesia championships and Finals appearances."],["INTERNATIONAL RESULTS","M-Series, MSC, and other world-stage performances."],["LONGEVITY","Career length and sustained relevance across eras."],["INDIVIDUAL AWARDS","MVPs, Finals MVPs, and individual hardware earned."]],
+    heading:"Top 10 Indonesian<br>Mobile Legends Players<br>of All Time",
+    eyebrow:"MPL Indonesia · All-Time Ranking",
+    intro:"Built from Seasons 1 through 17, plus every M-Series and MSC appearance along the way. Scroll straight through the full countdown below, or jump to a player."
+  },
+  {
+    id:"mpl-domestic-legacy",
+    badge:"MPL Indonesia · Domestic-Only Criteria",
+    title:"Top 10 MPL ID Players — Domestic Legacy Edition",
+    blurb:"A second, MPL-only ranking of Indonesia's greatest Mobile Legends players — this time weighted purely on MPL team trophies, MPL individual trophies, longevity inside the league, impact on MPL metas, nicknames earned in the MPL scene, and the MPL stats to back it all up. International results aren't part of the math this time.",
+    meta:"10 ranked · 4 honorable mentions · MPL-only scoring",
+    players:PLAYERS_MPL, honorable:HONORABLE_MENTIONS_MPL,
+    criteria:[["teamTrophies","Team Trophies"],["individualTrophies","Individual Trophies"],["longevity","Longevity"],["metaImpact","Meta Impact"],["nicknames","Nicknames"],["statsProof","Stats Proof"]],
+    metaRow:[["Most Titles","Kiboy, Sanz & CW (7)"],["Longest Active Career","Sanz (S6–S17+)"],["Best Nickname Case","Lemon (\"The Alien\")"],["Most Orgs Won With","LJ (3 orgs)"]],
+    method:[["TEAM TROPHIES","MPL Indonesia championships won, full stop — no international results counted."],["INDIVIDUAL TROPHIES","MVPs, Finals MVPs, Best Roamer, and other MPL-specific individual awards."],["LONGEVITY","Seasons played and sustained relevance inside MPL Indonesia specifically."],["META IMPACT","Whether the player's style or a role/position change shifted how MPL ID is played."],["NICKNAMES","Whether the MPL scene gave the player a nickname that stuck."],["STATS PROOF","Trophy counts, records, and other hard MPL numbers backing the ranking."]],
+    heading:"Top 10 MPL ID Players —<br>Domestic <span class=\"gold\">Legacy</span><br>Edition",
+    eyebrow:"MPL Indonesia · MPL-Only Ranking",
+    intro:"This list only counts what happened inside MPL Indonesia itself — team trophies, individual trophies, longevity, meta impact, nicknames, and the stats to back it up. No M-Series, no MSC. Scroll through the full countdown below, or jump to a player."
+  }
+];
+
+const SITE_FOOTER = `
+  <footer class="site-footer">
+    <div>Arena Ten — independent all-time competitive gaming analysis &amp; grading.</div>
+    <div>Grades reflect editorial judgment based on sourced achievements, not official league scoring.</div>
+  </footer>
+`;
+
+const NEWS_ITEMS = [
+  {
+    date:"August 2026",
+    tag:"NEW RANKING",
+    title:"Domestic Legacy Edition is live: a second Top 10 for MPL ID players only",
+    body:"We've published a companion ranking to our original all-time list — this one scored purely on MPL Indonesia trophies, individual hardware, longevity, meta impact, and nicknames, with international results deliberately left out of the math. Expect the order to look different."
+  },
+  {
+    date:"July 2026",
+    tag:"SITE UPDATE",
+    title:"New pages: Rankings, News, About, and Contact",
+    body:"Arena Ten now has a proper sidebar and dedicated pages beyond the original countdown, so it's easier to see what's ranked, read how we grade, and reach out with corrections or requests for the next list."
+  },
+  {
+    date:"June 2026",
+    tag:"LAUNCH",
+    title:"Arena Ten launches with the all-time MPL Indonesia Top 10",
+    body:"Our first list: the ten greatest Indonesian Mobile Legends: Bang Bang players ever, graded across domestic titles, international results, longevity, and individual awards — plus two honorable mentions who just missed the cut."
+  }
+];
+
+function renderRankingsHub(){
+  document.title = "Rankings — Arena Ten";
+  const cards = RANKINGS.map(r=>`
+    <a href="#/ranking/${r.id}" class="hub-card">
+      <span class="hub-badge">${r.badge}</span>
+      <h3>${r.title}</h3>
+      <p>${r.blurb}</p>
+      <div class="hub-meta">${r.meta} →</div>
     </a>
   `).join("");
 
-  const hmCards = HONORABLE_MENTIONS.map(h=>`
-    <div class="hm-card" style="--team:${h.color}">
-      <span class="tag mono">${h.tag}</span>
-      <h4>${h.name}</h4>
-      <div class="sub">${h.team}</div>
-      <p>${h.text}</p>
+  return `
+    <section class="hero">
+      <div class="eyebrow">✦ ALL RANKINGS ✦</div>
+      <h1 class="display">Every List,<br>One <span class="gold">Growing</span> Archive</h1>
+      <p class="hub-intro">Sourced, graded, argued-over rankings of esports and competitive gaming's greatest players — one region, one game, one era at a time. New lists get added here as they're built.</p>
+    </section>
+    <div class="hub-grid">
+      ${cards}
+      <div class="hub-card coming-soon">
+        <span class="hub-badge">Coming Soon</span>
+        <h3>More Rankings</h3>
+        <p>Future all-time lists will show up here as they're built.</p>
+      </div>
+    </div>
+    ${SITE_FOOTER}
+  `;
+}
+
+function renderHome(){
+  document.title = "Arena Ten — All-Time Rankings Archive";
+  const featured = RANKINGS[RANKINGS.length-1];
+  const otherRankings = RANKINGS.slice(0, -1);
+
+  const otherCards = otherRankings.map(r=>`
+    <a href="#/ranking/${r.id}" class="hub-card">
+      <span class="hub-badge">${r.badge}</span>
+      <h3>${r.title}</h3>
+      <p>${r.blurb}</p>
+      <div class="hub-meta">${r.meta} →</div>
+    </a>
+  `).join("");
+
+  const newsMini = NEWS_ITEMS.slice(0,3).map(n=>`
+    <div class="mini-news-item">
+      <div class="d">${n.date} · ${n.tag}</div>
+      <h4>${n.title}</h4>
     </div>
   `).join("");
 
   return `
     <section class="hero">
-      <div class="eyebrow">// MPL INDONESIA · ALL-TIME RANKING</div>
-      <h1>TOP 10 <span class="glow">MPL ID</span><br>PLAYERS OF ALL TIME</h1>
-      <p>A ranked, graded breakdown of the ten greatest players in MPL Indonesia history — weighted across domestic titles, international results, career longevity, and individual awards. Built from Seasons 1 through 17, plus every M-Series and MSC appearance along the way.</p>
-      <div class="meta-row">
-        <div class="meta-item">MOST TITLES<b>Kiboy (7)</b></div>
-        <div class="meta-item">ONLY WORLD CHAMPION<b>EVOS Legends (M1 '19)</b></div>
-        <div class="meta-item">MOST DECORATED ORG<b>ONIC Esports (8 titles)</b></div>
-        <div class="meta-item">S17 CHAMPION<b>Bigetron by Vitality</b></div>
-      </div>
-      <div class="method">
-        <div><span>DOMESTIC TITLES</span><p>MPL Indonesia championships and Finals appearances.</p></div>
-        <div><span>INTERNATIONAL RESULTS</span><p>M-Series, MSC, and other world-stage performances.</p></div>
-        <div><span>LONGEVITY</span><p>Career length and sustained relevance across eras.</p></div>
-        <div><span>INDIVIDUAL AWARDS</span><p>MVPs, Finals MVPs, and individual hardware earned.</p></div>
+      <div class="eyebrow">✦ ARENA TEN ✦</div>
+      <h1 class="display">All-Time Rankings,<br>One <span class="gold">Growing</span> Archive</h1>
+      <p class="hub-intro">Sourced, graded, argued-over rankings of esports and competitive gaming's greatest players — one region, one game, one era at a time. Two MPL Indonesia lists live right now, more on the way.</p>
+      <div class="home-cta-row">
+        <a href="#/rankings" class="btn solid">Browse All Rankings</a>
+        <a href="#/about" class="btn">How We Grade</a>
       </div>
     </section>
-    <div class="list-head">
-      <h2 class="mono">THE RANKING — TAP ANY PLAYER FOR THE FULL REPORT</h2>
+
+    <div class="home-section-lbl">✦ LATEST RANKING</div>
+    <a href="#/ranking/${featured.id}" class="home-featured">
+      <span class="hub-badge">${featured.badge}</span>
+      <h3>${featured.title}</h3>
+      <p>${featured.blurb}</p>
+      <div class="hub-meta">${featured.meta} →</div>
+    </a>
+
+    ${otherCards ? `<div class="home-section-lbl">✦ MORE RANKINGS</div><div class="hub-grid">${otherCards}</div>` : ""}
+
+    <div class="home-two">
+      <div class="home-mini-card">
+        <div class="home-section-lbl">LATEST NEWS</div>
+        ${newsMini}
+        <div class="home-cta-row"><a href="#/news" class="btn">All News</a></div>
+      </div>
+      <div class="home-mini-card home-about-blurb">
+        <div class="home-section-lbl">ABOUT ARENA TEN</div>
+        <p>Arena Ten builds sourced, graded all-time rankings for competitive gaming — starting with MPL Indonesia. Every list comes with a documented methodology, letter grades per category, and honorable mentions for the players who just missed the cut.</p>
+        <div class="home-cta-row"><a href="#/about" class="btn">Read More</a><a href="#/contact" class="btn">Get In Touch</a></div>
+      </div>
     </div>
-    <div class="list">${rows}</div>
-    <div class="hm-section">
-      <div class="section-title">HONORABLE MENTIONS</div>
-      <div class="hm-grid">${hmCards}</div>
-    </div>
-    <footer class="site-footer">
-      <div>Arena Ten — independent all-time MPL Indonesia analysis &amp; grading.</div>
-      <div>Grades reflect editorial judgment based on sourced achievements, not official league scoring.</div>
-    </footer>
+    ${SITE_FOOTER}
   `;
 }
 
-function renderPlayer(slug){
-  const list = PLAYERS.slice().sort((a,b)=>a.rank-b.rank);
-  const idx = list.findIndex(p=>p.slug===slug);
-  if(idx===-1) return `<div style="padding:80px 0;">Player not found. <a href="#/" class="mono" style="color:var(--cyan);">Back to the ranking →</a></div>`;
-  const p = list[idx];
-  const prev = list[(idx-1+list.length)%list.length];
-  const next = list[(idx+1)%list.length];
+function renderNews(){
+  document.title = "News — Arena Ten";
+  const items = NEWS_ITEMS.map(n=>`
+    <div class="news-card">
+      <span class="tag-pill">${n.tag}</span>
+      <div class="d">${n.date}</div>
+      <h3>${n.title}</h3>
+      <p>${n.body}</p>
+    </div>
+  `).join("");
 
+  return `
+    <section class="hero">
+      <div class="eyebrow">✦ NEWS ✦</div>
+      <h1 class="display">Site <span class="gold">Updates</span><br>&amp; Announcements</h1>
+      <p>New rankings, methodology changes, and site updates as they happen.</p>
+    </section>
+    <div class="news-list">${items}</div>
+    ${SITE_FOOTER}
+  `;
+}
+
+function renderAbout(){
+  document.title = "About — Arena Ten";
+  return `
+    <section class="hero">
+      <div class="eyebrow">✦ ABOUT ✦</div>
+      <h1 class="display">Sourced Rankings,<br>Argued <span class="gold">Openly</span></h1>
+      <p>Arena Ten is an independent, editorial project building all-time "top ten" lists for competitive gaming — starting with Mobile Legends: Bang Bang in Indonesia.</p>
+    </section>
+
+    <div class="about-block">
+      <h2>WHAT WE DO</h2>
+      <p>Every list on Arena Ten is built the same way: pick a scope, define the criteria up front, grade every player against those criteria, and publish the full reasoning — including who almost made the cut and why they didn't. We're not an official league or publisher; grades reflect editorial judgment based on publicly documented achievements, not official league scoring.</p>
+      <p>We currently run two lists for MPL Indonesia, built on purpose to disagree with each other: an all-time ranking that weighs international results (M-Series, MSC) alongside domestic play, and a "Domestic Legacy" ranking that scores MPL Indonesia achievements only. Same player pool, different math, different order.</p>
+    </div>
+
+    <div class="about-block">
+      <h2>HOW GRADING WORKS</h2>
+      <p>Each ranking publishes its own criteria before the countdown starts. Every player gets a letter grade (A+ down to D) in each category, plus an overall grade used for the quick-reference list. Category weightings are editorial, not statistical — we explain our reasoning in each player's write-up rather than hiding behind a formula.</p>
+      <div class="about-grid">
+        <div class="about-crit"><div class="n">01</div><h4>Trophies (Team &amp; Individual)</h4><p>Championships won, plus MVPs, Finals MVPs, and other individual hardware.</p></div>
+        <div class="about-crit"><div class="n">02</div><h4>Longevity</h4><p>How long a player stayed relevant, and across how many seasons or eras.</p></div>
+        <div class="about-crit"><div class="n">03</div><h4>Meta &amp; Legacy Impact</h4><p>Whether a player's style, role switch, or signature nickname changed how the game is talked about or played.</p></div>
+        <div class="about-crit"><div class="n">04</div><h4>Stats Proof</h4><p>The hard numbers — records, counts, and results — that back the narrative case up.</p></div>
+      </div>
+    </div>
+
+    <div class="about-block">
+      <h2>CORRECTIONS &amp; DISAGREEMENTS</h2>
+      <p>Rankings like these are meant to be argued with. If you think we got an order wrong, missed an achievement, or should build a list for a different region or game entirely, the <a href="#/contact" style="color:var(--gold-light); font-weight:700;">Contact page</a> is the place to tell us.</p>
+    </div>
+    ${SITE_FOOTER}
+  `;
+}
+
+function renderContact(){
+  document.title = "Contact — Arena Ten";
+  return `
+    <section class="hero">
+      <div class="eyebrow">✦ CONTACT ✦</div>
+      <h1 class="display">Corrections, Requests<br>&amp; <span class="gold">Feedback</span></h1>
+      <p>Spot an error, have a source we missed, or want to see a list for a different region or game? Send it over.</p>
+    </section>
+    <div class="contact-wrap">
+      <div class="contact-form">
+        <label for="c-name">Name</label>
+        <input id="c-name" type="text" placeholder="Your name">
+        <label for="c-email">Email</label>
+        <input id="c-email" type="email" placeholder="you@example.com">
+        <label for="c-subject">Subject</label>
+        <input id="c-subject" type="text" placeholder="e.g. Correction on the S12 MVP stat">
+        <label for="c-message">Message</label>
+        <textarea id="c-message" placeholder="Tell us what you found, or what list you'd like to see next..."></textarea>
+        <div class="home-cta-row" style="margin-top:20px;">
+          <a href="mailto:hello@arenaten.example?subject=Arena%20Ten%20Contact" class="btn solid">Send via Email</a>
+        </div>
+      </div>
+      <div class="contact-side">
+        <div class="contact-card"><span class="label">EMAIL</span><div class="val">hello@arenaten.example</div></div>
+        <div class="contact-card"><span class="label">FOR</span><div class="val">Corrections, source disputes, new list requests</div></div>
+        <div class="contact-card"><span class="label">RESPONSE TIME</span><div class="val">Usually within a few days</div></div>
+      </div>
+    </div>
+    ${SITE_FOOTER}
+  `;
+}
+
+function playerPhoto(p, sizeClass){
+  return `<img class="${sizeClass}" src="${p.photo}" alt="${p.name}" style="--team:${p.color}" onerror="this.style.display='none'">`;
+}
+
+function renderPlayerBlock(p, ranking, isLast){
   const bars = p.stats.map(([label,pct])=>`
     <div class="bar-row">
       <div class="lbl">${label}</div>
@@ -447,17 +1233,16 @@ function renderPlayer(slug){
 
   const narrative = p.narrative.map(par=>`<p>${par}</p>`).join("");
   const achv = p.achievements.map(a=>`<li>${a}</li>`).join("");
-  const cells = ["domestic","international","longevity","individual"].map(key=>{
-    const label = {domestic:"Domestic Titles",international:"International",longevity:"Longevity",individual:"Individual"}[key];
+  const cells = ranking.criteria.map(([key,label])=>{
     const g = p.grades[key];
     return `<div class="cell" style="--grade-color:${GRADE_COLOR(g)}"><div class="label">${label}</div><div class="grade">${g}</div></div>`;
   }).join("");
 
-  return `
-    <a href="#/" class="back-link">← BACK TO THE RANKING</a>
-    <div class="p-hero" style="--team:${p.color}">
+  const block = `
+    <div id="${p.slug}" class="p-hero" style="--team:${p.color}">
       <div class="watermark">${p.rank}</div>
-      <div class="rank-tag mono">RANK #${p.rank} OF 10</div>
+      <div class="rank-tag">Rank #${p.rank} of 10</div>
+      ${playerPhoto(p, "player-photo-lg")}
       <h1>${p.name}</h1>
       <div class="team-line mono">${p.team} · ${p.pos}</div>
       <div class="hook">${p.hook}</div>
@@ -475,31 +1260,199 @@ function renderPlayer(slug){
 
     <div class="section-title">TITLES &amp; ACHIEVEMENTS</div>
     <ul class="achv-list">${achv}</ul>
-
-    <div class="pager">
-      <a href="#/player/${prev.slug}"><div class="dir mono">← PREVIOUS · #${prev.rank}</div><div class="nm">${prev.name}</div></a>
-      <a href="#/player/${next.slug}" class="next"><div class="dir mono">NEXT · #${next.rank} →</div><div class="nm">${next.name}</div></a>
-    </div>
-    <footer class="site-footer">
-      <div>Arena Ten — independent all-time MPL Indonesia analysis &amp; grading.</div>
-      <div>Grades reflect editorial judgment based on sourced achievements, not official league scoring.</div>
-    </footer>
   `;
+
+  if(isLast) return block;
+
+  const list = ranking.players.slice().sort((a,b)=>a.rank-b.rank);
+  const next = list[list.findIndex(x=>x.slug===p.slug)+1];
+  const divider = `
+    <div class="player-divider">
+      <div class="dl"></div>
+      <div class="rank-chip">NEXT · #${next.rank} ${next.name}</div>
+      <div class="dl"></div>
+    </div>
+  `;
+  return block + divider;
+}
+
+function renderRankingPage(id){
+  const ranking = RANKINGS.find(r=>r.id===id);
+  if(!ranking) return `<div style="padding:80px 0;">Ranking not found. <a href="#/rankings" style="color:var(--gold);">Back to Rankings →</a></div>`;
+
+  document.title = ranking.title + " | Arena Ten";
+  const list = ranking.players.slice().sort((a,b)=>a.rank-b.rank);
+
+  const quickList = list.map(p=>`
+    <a href="#${p.slug}" class="row" style="--team:${p.color}" onclick="event.preventDefault(); document.getElementById('${p.slug}').scrollIntoView({behavior:'smooth', block:'start'});">
+      <div class="rank-badge"><span>${p.rank}</span></div>
+      <div class="row-name">
+        <h3>${p.name}</h3>
+        <div class="sub">${p.team} · ${p.pos}</div>
+      </div>
+      <div class="row-hook">${p.hook}</div>
+      <div class="grade-pill" style="--grade-color:${GRADE_COLOR(p.grades.overall)}">${p.grades.overall}</div>
+    </a>
+  `).join("");
+
+  const profiles = list.map((p,i)=>renderPlayerBlock(p, ranking, i===list.length-1)).join("");
+
+  const hmCards = ranking.honorable.map(h=>`
+    <div class="hm-card" style="--team:${h.color}">
+      <span class="tag label">${h.tag}</span>
+      <h4>${h.name}</h4>
+      <div class="sub">${h.team}</div>
+      <p>${h.hook}</p>
+      <div class="hm-label">ACCOMPLISHMENTS</div>
+      <ul>${h.accomplishments.map(a=>`<li>${a}</li>`).join("")}</ul>
+      <div class="hm-label">STORYLINE</div>
+      <p>${h.storyline}</p>
+      <div class="hm-label">WHY THEY DIDN'T MAKE THE CUT</div>
+      <p>${h.whyNotCut}</p>
+    </div>
+  `).join("");
+
+  const metaRow = ranking.metaRow.map(([label,val])=>`
+    <div class="meta-item"><span class="label">${label}</span><b>${val}</b></div>
+  `).join("");
+
+  const method = ranking.method.map(([title,desc])=>`
+    <div><span>${title}</span><p>${desc}</p></div>
+  `).join("");
+
+  return `
+    <a href="#/rankings" class="back-to-hub">← BACK TO ALL RANKINGS</a>
+    <section class="hero">
+      <div class="eyebrow">✦ ${ranking.eyebrow} ✦</div>
+      <h1 class="display">${ranking.heading}</h1>
+      <p>${ranking.blurb} ${ranking.intro}</p>
+      <div class="meta-row">${metaRow}</div>
+      <div class="method">${method}</div>
+    </section>
+    <div class="list-head">
+      <h2>Jump to a Player</h2>
+    </div>
+    <div class="list">${quickList}</div>
+
+    <div class="list-head">
+      <h2>The Full Countdown</h2>
+    </div>
+    ${profiles}
+
+    <div class="hm-section">
+      <div class="section-title">HONORABLE MENTIONS</div>
+      <div class="hm-grid">${hmCards}</div>
+    </div>
+    ${SITE_FOOTER}
+  `;
+}
+
+function setActiveNav(routeName){
+  document.querySelectorAll(".sidebar-links a").forEach(a=>{
+    a.classList.toggle("active", a.dataset.route === routeName);
+  });
+}
+
+function closeMobileSidebar(){
+  document.getElementById("sidebar").classList.remove("open");
+  document.getElementById("sidebarBackdrop").classList.remove("show");
 }
 
 function router(){
   const hash = location.hash || "#/";
   const app = document.getElementById("app");
-  const playerMatch = hash.match(/^#\/player\/([a-z0-9-]+)/);
-  if(playerMatch){
-    app.innerHTML = renderPlayer(playerMatch[1]);
-  } else {
+  const rankingMatch = hash.match(/^#\/ranking\/([a-z0-9-]+)/);
+
+  closeMobileSidebar();
+
+  if(rankingMatch){
+    app.innerHTML = renderRankingPage(rankingMatch[1]);
+    setActiveNav("rankings");
+    window.scrollTo({top:0, behavior:"instant"});
+  } else if(hash === "#/rankings"){
+    app.innerHTML = renderRankingsHub();
+    setActiveNav("rankings");
+    window.scrollTo({top:0, behavior:"instant"});
+  } else if(hash === "#/news"){
+    app.innerHTML = renderNews();
+    setActiveNav("news");
+    window.scrollTo({top:0, behavior:"instant"});
+  } else if(hash === "#/about"){
+    app.innerHTML = renderAbout();
+    setActiveNav("about");
+    window.scrollTo({top:0, behavior:"instant"});
+  } else if(hash === "#/contact"){
+    app.innerHTML = renderContact();
+    setActiveNav("contact");
+    window.scrollTo({top:0, behavior:"instant"});
+  } else if(hash === "#/" || hash === ""){
     app.innerHTML = renderHome();
+    setActiveNav("home");
+    window.scrollTo({top:0, behavior:"instant"});
   }
-  window.scrollTo({top:0, behavior:"instant"});
+  // any other hash (e.g. an in-page player anchor like #kairi) is left alone
+  // so the browser's native anchor scroll behavior can take over.
+  checkBackToTop();
 }
 window.addEventListener("hashchange", router);
-window.addEventListener("DOMContentLoaded", router);
+
+function checkBackToTop(){
+  const btn = document.getElementById("backToTop");
+  if(!btn) return;
+  const listEl = document.querySelector(".list");
+  let show;
+  if(listEl){
+    // Show once the quick-list (top 10 jump list) has fully scrolled past,
+    // i.e. we've entered the individual player profiles.
+    show = listEl.getBoundingClientRect().bottom < 0;
+  } else {
+    show = window.scrollY > 700;
+  }
+  btn.classList.toggle("show", show);
+}
+
+function toggleSidebar(){
+  const sidebar = document.getElementById("sidebar");
+  const backdrop = document.getElementById("sidebarBackdrop");
+  const edgeToggle = document.getElementById("sidebarEdgeToggle");
+  if(window.innerWidth <= 900){
+    sidebar.classList.toggle("open");
+    backdrop.classList.toggle("show");
+  } else {
+    const collapsed = document.body.classList.toggle("sidebar-collapsed");
+    if(edgeToggle) edgeToggle.textContent = collapsed ? "▸" : "◂";
+    try{ localStorage.setItem("arenaTenSidebarCollapsed", collapsed ? "1" : "0"); }catch(e){}
+  }
+}
+
+window.addEventListener("DOMContentLoaded", () => {
+  router();
+  const menuBtn = document.getElementById("menuBtn");
+  const sidebar = document.getElementById("sidebar");
+  const backdrop = document.getElementById("sidebarBackdrop");
+  const edgeToggle = document.getElementById("sidebarEdgeToggle");
+  const backToTop = document.getElementById("backToTop");
+
+  if(menuBtn) menuBtn.addEventListener("click", toggleSidebar);
+  if(edgeToggle) edgeToggle.addEventListener("click", toggleSidebar);
+  if(backdrop) backdrop.addEventListener("click", closeMobileSidebar);
+
+  // Restore the user's desktop sidebar preference across visits.
+  try{
+    if(window.innerWidth > 900 && localStorage.getItem("arenaTenSidebarCollapsed") === "1"){
+      document.body.classList.add("sidebar-collapsed");
+      if(edgeToggle) edgeToggle.textContent = "▸";
+    }
+  }catch(e){}
+
+  if(backToTop){
+    backToTop.addEventListener("click", () => {
+      window.scrollTo({top:0, behavior:"smooth"});
+    });
+  }
+  window.addEventListener("scroll", checkBackToTop, {passive:true});
+  checkBackToTop();
+});
 </script>
 </body>
 </html>

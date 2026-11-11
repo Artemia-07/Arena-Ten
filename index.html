@@ -644,10 +644,30 @@ main{position:relative; z-index:1; max-width:1120px; margin:0 auto 0 248px; padd
 </head>
 <body>
 <noscript>
-  <div style="max-width:560px; margin:80px auto; padding:28px 24px; text-align:center; font-family:sans-serif; background:#1a0d0d; color:#f2ead8; border:1px solid #d4af37;">
-    <p style="margin:0 0 8px; font-weight:700;">Arena Ten requires JavaScript</p>
-    <p style="margin:0; opacity:0.8; font-size:0.9rem;">Please enable JavaScript in your browser to view these rankings.</p>
-  </div>
+  <div style="max-width:760px; margin:40px auto; padding:28px 32px 44px; font-family:sans-serif; background:#1a0d0d; color:#f2ead8; border:1px solid #d4af37; line-height:1.6;">
+    <p style="margin:0 0 20px; font-weight:700; font-size:1.1rem;">Arena Ten — All-Time Rankings (JavaScript disabled)</p>
+    <p style="margin:0 0 28px; opacity:0.8; font-size:0.9rem;">This page is interactive with JavaScript enabled — grades, full write-ups, and navigation all require it. Here are the current rankings in full:</p>
+    <section>
+      <h2>Top 10 Indonesian Mobile Legends Players of All Time</h2>
+      <p>A ranked, graded breakdown of the ten greatest Indonesian Mobile Legends: Bang Bang players ever — weighted across domestic titles, international results, career longevity, and individual awards.</p>
+      <ol><li>#1 Kairi — ONIC Esports</li><li>#2 Kiboy — ONIC Esports</li><li>#3 Sanz — ONIC Esports</li><li>#4 CW — ONIC Esports</li><li>#5 Butss — ONIC Esports</li><li>#6 Lemon — RRQ Hoshi</li><li>#7 Oura — EVOS Legends</li><li>#8 Luminaire — EVOS Legends</li><li>#9 Vyn (Calvin) — RRQ Hoshi / Bigetron Alpha</li><li>#10 Rekt — EVOS Legends</li></ol>
+    </section>
+    <section>
+      <h2>Top 10 MPL ID Players — Domestic Legacy Edition</h2>
+      <p>A second, MPL-only ranking of Indonesia's greatest Mobile Legends players — this time weighted purely on MPL team trophies, MPL individual trophies, longevity inside the league, impact on MPL metas, nicknames earned in the MPL scene, and the MPL stats to back it all up. International results aren't part of the math this time.</p>
+      <ol><li>#1 Sanz — ONIC Esports</li><li>#2 Kiboy — ONIC Esports</li><li>#3 Kairi — ONIC Esports</li><li>#4 CW — ONIC Esports</li><li>#5 Butss — ONIC Esports</li><li>#6 Lemon — RRQ Hoshi</li><li>#7 Alberttt — RRQ Hoshi / ONIC Esports / EVOS</li><li>#8 LJ — NXL → RRQ Hoshi → EVOS Legends</li><li>#9 Vyn (Calvin) — RRQ Hoshi / Bigetron Alpha</li><li>#10 Skylar — RRQ Hoshi / ONIC Esports</li></ol>
+    </section>
+    <section>
+      <h2>The Top 10 MLBB Players of All Time</h2>
+      <p>The ten greatest Mobile Legends: Bang Bang players ever, across every region. World championships come first, then Finals MVPs and the rest of the hardware.</p>
+      <ol><li>#1 KarlTzy — Bren Esports / ECHO / Team Liquid PH</li><li>#2 Pheww — Bren Esports / AP.Bren</li><li>#3 Edward — Blacklist International / Aurora Gaming PH</li><li>#4 FlapTzy — Bren Esports / AP.Bren</li><li>#5 Oheb — Blacklist International / Team Liquid PH</li><li>#6 Oura — EVOS Legends</li><li>#7 OhMyV33nus — Blacklist International / Aurora</li><li>#8 Wise — Blacklist International</li><li>#9 Light — RSG PH / Aurora Gaming PH</li><li>#10 Bennyqt — ECHO</li></ol>
+    </section>
+    <section>
+      <h2>Top 10 MPL Philippines Players of All Time</h2>
+      <p>A ranked, graded breakdown of the ten greatest MPL Philippines players ever — weighted across domestic titles, international World Championship results, career longevity, and individual awards.</p>
+      <ol><li>#1 KarlTzy — Finesse Solid / Bren / ECHO / Team Liquid PH</li><li>#2 Pheww — Cignal Ultra / Bren / AP.Bren</li><li>#3 Edward — Blacklist International / Aurora Gaming PH</li><li>#4 FlapTzy — Bren / AP.Bren</li><li>#5 Oheb — Blacklist International / Team Liquid PH</li><li>#6 OhMyV33nus — Blacklist International</li><li>#7 Wise — Blacklist International</li><li>#8 Light — TNC Pro Team / RSG Philippines / Aurora Gaming PH</li><li>#9 Bennyqt — Execration / ECHO Philippines</li><li>#10 Kelra — Execration / Smart Omega / Fnatic ONIC Philippines</li></ol>
+    </section>
+    </div>
 </noscript>
 <div class="mobile-topbar">
   <a href="#/" class="logo">
@@ -676,7 +696,82 @@ main{position:relative; z-index:1; max-width:1120px; margin:0 auto 0 248px; padd
   <div class="sidebar-foot">Independent editorial rankings for competitive Mobile Legends: Bang Bang.</div>
 </aside>
 <button class="sidebar-edge-toggle" id="sidebarEdgeToggle" aria-label="Toggle sidebar" title="Toggle sidebar">◂</button>
-<main id="app" role="main" aria-live="polite"></main>
+<main id="app" role="main" aria-live="polite">
+    <section class="hero">
+      <div class="eyebrow">✦ ARENA TEN ✦</div>
+      <h1 class="display">All-Time Rankings,<br>One <span class="gold">Growing</span> Archive</h1>
+      <p class="hub-intro">Sourced, graded, argued-over rankings of esports and competitive gaming's greatest players — one region, one game, one era at a time. Four lists live right now, more on the way.</p>
+      <div class="home-cta-row">
+        <a href="#/rankings" class="btn solid">Browse All Rankings</a>
+        <a href="#/about" class="btn">How We Grade</a>
+      </div>
+    </section>
+
+    <div class="home-section-lbl">✦ LATEST RANKING</div>
+    <a href="#/ranking/mpl-ph-all-time" class="home-featured">
+      <span class="hub-badge">MPL Philippines · Est. 2018</span>
+      <h3>Top 10 MPL Philippines Players of All Time</h3>
+      <p>A ranked, graded breakdown of the ten greatest MPL Philippines players ever — weighted across domestic titles, international World Championship results, career longevity, and individual awards.</p>
+      <div class="hub-meta">10 ranked · 3 honorable mentions · Seasons 1–18 →</div>
+    </a>
+
+    <div class="home-section-lbl">✦ MORE RANKINGS</div><div class="hub-grid">
+    <a href="#/ranking/mpl-id-all-time" class="hub-card">
+      <span class="hub-badge">MPL Indonesia · Est. 2018</span>
+      <h3>Top 10 Indonesian Mobile Legends Players of All Time</h3>
+      <p>A ranked, graded breakdown of the ten greatest Indonesian Mobile Legends: Bang Bang players ever — weighted across domestic titles, international results, career longevity, and individual awards.</p>
+      <div class="hub-meta">10 ranked · 2 honorable mentions · Seasons 1–17 →</div>
+    </a>
+  
+    <a href="#/ranking/mpl-domestic-legacy" class="hub-card">
+      <span class="hub-badge">MPL Indonesia · Domestic-Only Criteria</span>
+      <h3>Top 10 MPL ID Players — Domestic Legacy Edition</h3>
+      <p>A second, MPL-only ranking of Indonesia's greatest Mobile Legends players — this time weighted purely on MPL team trophies, MPL individual trophies, longevity inside the league, impact on MPL metas, nicknames earned in the MPL scene, and the MPL stats to back it all up. International results aren't part of the math this time.</p>
+      <div class="hub-meta">10 ranked · 4 honorable mentions · MPL-only scoring →</div>
+    </a>
+  
+    <a href="#/ranking/mlbb-top-10-all-time" class="hub-card">
+      <span class="hub-badge">MLBB · World Champions First</span>
+      <h3>The Top 10 MLBB Players of All Time</h3>
+      <p>The ten greatest Mobile Legends: Bang Bang players ever, across every region. World championships come first, then Finals MVPs and the rest of the hardware.</p>
+      <div class="hub-meta">10 ranked · 5 honorable mentions · M1–M7 →</div>
+    </a>
+  </div>
+
+    <div class="home-two">
+      <div class="home-mini-card">
+        <div class="home-section-lbl">LATEST NEWS</div>
+        
+    <div class="mini-news-item">
+      <div class="d">October 2026 · NEW RANKING</div>
+      <h4>The Top 10 MLBB Players of All Time is live</h4>
+    </div>
+  
+    <div class="mini-news-item">
+      <div class="d">August 2026 · NEW RANKING</div>
+      <h4>Domestic Legacy Edition is live: a second Top 10 for MPL ID players only</h4>
+    </div>
+  
+    <div class="mini-news-item">
+      <div class="d">July 2026 · SITE UPDATE</div>
+      <h4>New pages: Rankings, News, About, and Contact</h4>
+    </div>
+  
+        <div class="home-cta-row"><a href="#/news" class="btn">All News</a></div>
+      </div>
+      <div class="home-mini-card home-about-blurb">
+        <div class="home-section-lbl">ABOUT ARENA TEN</div>
+        <p>Arena Ten builds sourced, graded all-time rankings for competitive gaming — starting with MPL Indonesia. Every list comes with a documented methodology, letter grades per category, and honorable mentions for the players who just missed the cut.</p>
+        <div class="home-cta-row"><a href="#/about" class="btn">Read More</a><a href="#/contact" class="btn">Get In Touch</a></div>
+      </div>
+    </div>
+    
+  <footer class="site-footer">
+    <div>Arena Ten — independent all-time competitive gaming analysis &amp; grading.</div>
+    <div>Grades reflect editorial judgment based on sourced achievements, not official league scoring.</div>
+  </footer>
+
+  </main>
 <button class="back-to-top" id="backToTop" aria-label="Back to top" title="Back to top">↑</button>
 
 <script>
@@ -1250,6 +1345,181 @@ const HONORABLE_MENTIONS_MLBB = [
   }
 ];
 
+const PLAYERS_MPLPH = [
+{
+  slug:"mplph-karltzy", photo:"assets/players/karltzy.jpg", rank:1, name:"KarlTzy", team:"Finesse Solid / Bren / ECHO / Team Liquid PH", pos:"Jungler",
+  color:"#0038A8",
+  hook:"\"The Young GOAT,\" the \"Face of MLBB.\" Six MPL Philippines titles, two World Championships won with two completely different teams, and two Southeast Asian Games gold medals six years apart — no Filipino player's résumé is this complete.",
+  grades:{domestic:"A+", international:"A+", longevity:"A", individual:"A+", overall:"A+"},
+  stats:[["Domestic title dominance","98%"],["International hardware","97%"],["Career longevity (2018–present)","95%"]],
+  statBoxes:[["6","MPL PH titles"],["2","World titles, 2 different teams"],["2","SEA Games golds (2019, 2025)"],["2x","Regular Season MVP"]],
+  narrative:[
+    "Worth correcting up front: KarlTzy's MPL Philippines title count is six, not five or three. Season 6 with Bren, Season 11 and Season 13 with ECHO, then Seasons 15 through 17 with Team Liquid PH — the last three forming the first-ever three-peat by an organization in MPL Philippines history. Some May 2026 coverage reported \"five\" because that was his count after Season 16, before the Season 17 three-peat pushed him to six; both numbers are real, just from different points in time.",
+    "The trophy case around those six titles is just as deep: a Finals MVP and World Championship with Bren at M2 in 2021, then a second World Championship four years later with an entirely different organization, ECHO, at M4 — making him the first player ever to win two world titles with two different teams. Add a 2025 MSC championship, two Regular Season MVP awards, and a second SEA Games gold medal in 2025 (making him the first two-time gold medalist in the event's MLBB history), and the case for #1 isn't close."
+  ],
+  achievements:["6x MPL Philippines Champion (S6, S11, S13, S15–S17) — including the league's first-ever three-peat (S15–S17)","2x World Champion — with two different teams (Bren at M2, ECHO at M4), the only player to do so","MLBB M2 World Championship Finals MVP","MLBB Mid-Season Cup 2025 Champion","2x MPL Philippines Regular Season MVP (S12, S17)","2x SEA Games Gold Medalist (2019, 2025) — the first two-time gold medalist","6x MPL Philippines All-Star Team 1 selection"]
+},
+{
+  slug:"mplph-pheww", photo:"assets/players/pheww.jpg", rank:2, name:"Pheww", team:"Cignal Ultra / Bren / AP.Bren", pos:"Mid Laner / Captain",
+  color:"#0038A8",
+  hook:"Captain of both Bren World Championship runs, four years apart — the only player besides KarlTzy and FlapTzy to lift two M-Series trophies, and the only one of the three who did it as the man calling the shots.",
+  grades:{domestic:"A-", international:"A", longevity:"A-", individual:"B+", overall:"A-"},
+  stats:[["Captaincy across two title runs","95%"],["International hardware","93%"],["Domestic title count","85%"]],
+  statBoxes:[["3","MPL PH titles"],["2","World titles as captain"],["M2, M5","World Championship wins"],["1","SEA Games gold (2019)"]],
+  narrative:[
+    "Pheww's first MPL Philippines title came with Cignal Ultra in Season 2, before he ever set foot on Bren's roster — a detail that often gets lost next to the two World Championships that followed. He then led Bren to the Season 6 domestic title and the M2 World Championship, defeating Burmese Ghouls in a seven-game classic to make Bren the first Filipino team to win it all.",
+    "Nearly three years later, with an almost entirely different roster under the AP.Bren banner, he did it again: a Season 12 domestic title followed by the M5 World Championship, fought and won on Philippine soil in a seven-game final over ONIC Esports. Being captain of both runs — separated by years, rosters, and eras — is a leadership case nobody else on this list can match."
+  ],
+  achievements:["3x MPL Philippines Champion (S2 with Cignal Ultra, S6 and S12 with Bren/AP.Bren)","2x World Champion as team captain — M2 (2021) and M5 (2023), four years apart","MLBB M2 World Championship, first Filipino team to win it","SEA Games Gold Medalist (2019)"]
+},
+{
+  slug:"mplph-edward", photo:"assets/players/edward.jpg", rank:3, name:"Edward", team:"Blacklist International / Aurora Gaming PH", pos:"EXP Laner",
+  color:"#111111",
+  hook:"Two World Championships with two different organizations, four years apart — Blacklist at M3 in 2021, Aurora at M7 in 2025 — making him one of the very few players in MLBB history to win it all for separate teams in separate eras.",
+  grades:{domestic:"B+", international:"A+", longevity:"A", individual:"B+", overall:"A-"},
+  stats:[["Two-org world title gap","96%"],["International hardware","94%"],["Sustained relevance across eras","90%"]],
+  statBoxes:[["2","World titles, 2 different orgs"],["4+","Years between world titles"],["M3, M7","World Championship wins"],["S10","MPL PH Finals MVP"]],
+  narrative:[
+    "Edward was part of Blacklist International's title-winning core through Seasons 7, 8, and 10, picking up the Season 10 Finals MVP along the way, before the roster's M3 World Championship run put the Philippines back on top in December 2021. Most careers at that level peak once and fade; his didn't.",
+    "Four years later, on an entirely different roster with Aurora Gaming PH, Edward won a second World Championship at M7 — a gap wide enough that it bridges two distinct eras of MLBB esports. Winning world titles with two separate organizations years apart, the way KarlTzy did, is a vanishingly rare feat, and Edward is one of only a handful of players who can claim it."
+  ],
+  achievements:["2x World Champion — with two different organizations (Blacklist International at M3, Aurora Gaming PH at M7)","MPL Philippines Season 10 Finals MVP","Multiple MPL Philippines titles as part of Blacklist International's S7–S10 core","One of the longest top-flight careers among this list's international champions"]
+},
+{
+  slug:"mplph-flaptzy", photo:"assets/players/flaptzy.jpg", rank:4, name:"FlapTzy", team:"Bren / AP.Bren", pos:"EXP Laner",
+  color:"#0038A8",
+  hook:"Two World Championships four years apart, an M5 Finals MVP, and a share of the \"only player to win two M-Series titles\" club alongside KarlTzy and Pheww — all from the EXP lane, the position least likely to headline a highlight reel.",
+  grades:{domestic:"B", international:"A", longevity:"B+", individual:"B+", overall:"B+"},
+  stats:[["International hardware","92%"],["Finals-stage performance","90%"],["Domestic title count","78%"]],
+  statBoxes:[["2","MPL PH titles"],["2","World titles (M2, M5)"],["M5","Finals MVP"],["2023","IESF World Esports gold"]],
+  narrative:[
+    "FlapTzy's first title came with Bren at Season 6, immediately followed by the M2 World Championship run in Singapore that made the Philippines a global power. He stuck around long enough to do it again: a Season 12 domestic title with AP.Bren, sweeping Blacklist International 4-1 in the upper bracket finals, then the M5 World Championship fought and won at home.",
+    "That M5 run is where his individual case is strongest — a seven-game Grand Final against ONIC Esports that ended with him named Finals MVP. Two titles with two different World Championship-winning cores, four years apart, is the same rare feat KarlTzy and Pheww share, even if FlapTzy's domestic title count (two) is lighter than either of theirs."
+  ],
+  achievements:["2x MPL Philippines Champion (S6, S12)","2x World Champion (M2 in 2021, M5 in 2023)","MLBB M5 World Championship Finals MVP","IESF World Esports Championship gold medalist (2023)"]
+},
+{
+  slug:"mplph-oheb", photo:"assets/players/oheb.jpg", rank:5, name:"Oheb", team:"Blacklist International / Team Liquid PH", pos:"Gold Laner",
+  color:"#111111",
+  hook:"Five MPL Philippines titles with two different organizations — a correction on the record, since his count is usually undersold. Add an M3 World Championship and Finals MVP, and his trophy case is arguably the deepest on this list outside the very top.",
+  grades:{domestic:"A", international:"A-", longevity:"A-", individual:"A-", overall:"A-"},
+  stats:[["Domestic title count","93%"],["International hardware","88%"],["Longevity across two orgs","87%"]],
+  statBoxes:[["5","MPL PH titles"],["2","Different champion orgs"],["M3","World Champion & Finals MVP"],["2025","SEA Games gold"]],
+  narrative:[
+    "Oheb's MPL Philippines title count is five, not the three or four he's sometimes credited with — Seasons 7, 8, and 10 with Blacklist International, then Seasons 15 and 16 with Team Liquid PH after a late-career organization switch. That's the same number of PH-domestic titles as players with far louder individual reputations.",
+    "His signature moment is the Season 7 breakout that led directly into the M3 World Championship in December 2021, where Blacklist's run through the bracket ended with Oheb named tournament MVP. A Regular Season MVP award, a 2025 SEA Games gold medal, and five years at the top with two different organizations round out a résumé that's easy to undercount and hard to argue with once it's laid out in full."
+  ],
+  achievements:["5x MPL Philippines Champion (S7, S8, S10 with Blacklist International; S15, S16 with Team Liquid PH)","MLBB M3 World Championship Champion and tournament MVP","MPL Philippines Regular Season MVP (S7)","SEA Games Gold Medalist (2025)"]
+},
+{
+  slug:"mplph-ohmyv33nus", photo:"assets/players/ohmyv33nus.jpg", rank:6, name:"OhMyV33nus", team:"Blacklist International", pos:"Roamer",
+  color:"#111111",
+  hook:"M3 World Champion and, by reputation inside the scene, one of the most influential shot-callers the Philippines has produced — the co-architect of a meta-defining playstyle that carried Blacklist to the top, and a name MOONTON controversially left off its own \"10 Greatest Players\" list.",
+  grades:{domestic:"B", international:"B+", longevity:"B", individual:"B+", overall:"B"},
+  stats:[["International hardware","85%"],["Meta-shaping influence","88%"],["Domestic title count","70%"]],
+  statBoxes:[["3","MPL PH titles"],["M3","World Champion"],["S10","Regular Season MVP"],["2021","SEA Games gold"]],
+  narrative:[
+    "OhMyV33nus anchored the Blacklist International roam that won three MPL Philippines titles (S7, S8, S10) and the M3 World Championship, earning a reputation inside the scene as one of the sharpest shot-callers and enemy-movement predictors the league has produced — the Season 10 Regular Season MVP award backs that up directly.",
+    "Alongside fellow roamer-turned-jungler Wise, he's often credited as a co-architect of the aggressive, utility-heavy roam identity (informally called the \"UBE\" playstyle by fans) that shaped Blacklist's dynasty years. It's worth noting plainly: when MOONTON announced its official \"10 Greatest Players\" nominees ahead of M5 in 2023, both OhMyV33nus and Wise were left off the list — a decision MOONTON itself said was tied to the pair's promotional work with a betting platform, not a dispute over their on-court record. Blacklist publicly pushed back on the snub at the time."
+  ],
+  achievements:["3x MPL Philippines Champion (S7, S8, S10)","MLBB M3 World Championship Champion","MPL Philippines Regular Season MVP (S10)","SEA Games Gold Medalist (2021)","Left off MOONTON's official \"10 Greatest Players\" nominee list in 2023, a decision MOONTON attributed to sponsorship-related eligibility rules rather than performance"]
+},
+{
+  slug:"mplph-wise", photo:"assets/players/wise.jpg", rank:7, name:"Wise", team:"Blacklist International", pos:"Jungler",
+  color:"#111111",
+  hook:"M3 World Champion and the jungler credited with turning unconventional hero picks into established meta — opposing teams spent years copying strategies he and Blacklist built first. Like his longtime partner OhMyV33nus, he was notably left off MOONTON's own \"greatest players\" list.",
+  grades:{domestic:"B", international:"B+", longevity:"B", individual:"B", overall:"B"},
+  stats:[["International hardware","85%"],["Meta-shaping influence","86%"],["Domestic title count","70%"]],
+  statBoxes:[["3","MPL PH titles"],["M3","World Champion"],["2021","SEA Games gold"],["Co-pioneer","Blacklist's signature jungle identity"]],
+  narrative:[
+    "Wise shared the jungle role of Blacklist International's three-title, one-world-championship core, known across the league for unconventional hero selections that other junglers routinely had to prepare for — builds and picks that started on his client before spreading to the rest of the region.",
+    "The on-paper case (3x MPL Philippines champion, M3 World Champion, SEA Games gold) is already strong, which makes MOONTON's decision to exclude him from its 2023 \"10 Greatest Players\" nominees alongside OhMyV33nus the more notable footnote — by MOONTON's own account, a sponsorship-eligibility issue rather than a judgment on his play. It's a real talking point for any ranking like this one, and worth stating plainly rather than ignoring."
+  ],
+  achievements:["3x MPL Philippines Champion (S7, S8, S10)","MLBB M3 World Championship Champion","SEA Games Gold Medalist (2021)","Widely credited as a co-pioneer of Blacklist's meta-shifting jungle identity","Left off MOONTON's official \"10 Greatest Players\" nominee list in 2023, a decision MOONTON attributed to sponsorship-related eligibility rules rather than performance"]
+},
+{
+  slug:"mplph-light", photo:"assets/players/light.jpg", rank:8, name:"Light", team:"TNC Pro Team / RSG Philippines / Aurora Gaming PH", pos:"Roamer",
+  color:"#0038A8",
+  hook:"The first roamer ever to win an M-Series Finals MVP. Light's domestic trophy case is the thinnest of anyone in this top ten, but a historic, role-redefining international performance is enough to carry him in.",
+  grades:{domestic:"C+", international:"A-", longevity:"B", individual:"A-", overall:"B+"},
+  stats:[["Historic Finals MVP (first roamer)","95%"],["Individual MVP count","85%"],["Domestic title count","45%"]],
+  statBoxes:[["M7","Finals MVP — first roamer ever"],["1","World title (M7, Aurora)"],["1","MSC title (2022, RSG PH)"],["2x","Regular/Season MVP"]],
+  narrative:[
+    "Light's domestic résumé is genuinely light next to everyone else in this top ten — no confirmed MPL Philippines championship across stints with TNC, RSG Philippines, and Aurora Gaming PH, though he did pick up a Regular Season MVP in Season 9 and a Season MVP in Season 16. What gets him onto this list is what happened at M7 in January 2025.",
+    "Roaming for Aurora Gaming PH in a 4-0 sweep of Indonesia's Alter Ego, Light was named Finals MVP — the first roamer in M-Series history to win the award, a position that had always gone to a carry or a mid laner before him. Add RSG Philippines' MSC 2022 championship to his résumé, and the case is built almost entirely on two historic international moments rather than a thick trophy shelf — which is exactly why he sits at the bottom of the top ten rather than the middle."
+  ],
+  achievements:["MLBB M7 World Championship Finals MVP — the first roamer ever to win the award","World Champion (M7, Aurora Gaming PH, 4-0 sweep of Alter Ego)","MLBB Mid-Season Cup 2022 Champion (RSG Philippines)","2x MPL Philippines Regular/Season MVP (S9, S16)"]
+},
+{
+  slug:"mplph-bennyqt", photo:"assets/players/bennyqt.jpg", rank:9, name:"Bennyqt", team:"Execration / ECHO Philippines", pos:"Gold Laner",
+  color:"#0038A8",
+  hook:"M4 Finals MVP in a dominant 4-0 sweep of the defending World Champions — the signature individual moment of ECHO's title run, backed by two MPL Philippines championships.",
+  grades:{domestic:"B", international:"B+", longevity:"B", individual:"B", overall:"B"},
+  stats:[["M4 Finals performance","90%"],["Domestic title count","78%"],["Career consistency","80%"]],
+  statBoxes:[["2","MPL PH titles (S11, S13)"],["M4","World Champion & Finals MVP"],["4-0","Sweep of defending champs Blacklist"],["Multiple","Weekly MVP awards"]],
+  narrative:[
+    "Bennyqt's gold lane was the engine of ECHO Philippines' Season 11 and Season 13 title runs, and his signature moment came on the world stage: the M4 World Championship Grand Final, where ECHO swept the defending champions, Blacklist International, 4-0. Bennyqt was named Finals MVP for his part in that sweep, a statement result against the team that had beaten everyone else.",
+    "He'd shown the form before — multiple weekly MVP honors stretching back to his Execration days — but M4 is the hardware that defines his career. Two domestic titles and a World Championship Finals MVP against the toughest possible opponent is a complete, if not flashy, case for a top-ten spot."
+  ],
+  achievements:["2x MPL Philippines Champion (S11, S13, with ECHO Philippines)","MLBB M4 World Championship Champion and Finals MVP","M4 Grand Final: 4-0 sweep of defending champions Blacklist International","Multiple MPL Philippines Weekly MVP awards across his career"]
+},
+{
+  slug:"mplph-kelra", photo:"assets/players/kelra.jpg", rank:10, name:"Kelra", team:"Execration / Smart Omega / Fnatic ONIC Philippines", pos:"Gold Laner",
+  color:"#FFD200",
+  hook:"\"The Gold Standard.\" The first player in MLBB history to win Finals MVP at the MPL, MSC, and M-Series level — a genuine triple crown that no one else on this list, or arguably in the game's history, can claim.",
+  grades:{domestic:"C+", international:"B+", longevity:"B-", individual:"A", overall:"B+"},
+  stats:[["Triple Finals MVP sweep","97%"],["International hardware","86%"],["Domestic title count","55%"]],
+  statBoxes:[["1","MPL PH title (S14)"],["M6","World Champion & Finals MVP"],["MSC 2021","Finals MVP"],["3","Finals MVP awards, 3 different tournaments"]],
+  narrative:[
+    "Kelra's team trophy count is thin next to the rest of this top ten — one MPL Philippines title, won with Fnatic ONIC Philippines in a dramatic seven-game Season 14 Grand Final over Aurora Gaming, plus an M6 World Championship two months later and an MSC 2021 title earlier in his career. On team hardware alone, several honorable mentions below him have a stronger case.",
+    "What makes him impossible to leave out is individual hardware found nowhere else on this list: Finals MVP at MSC 2021, Finals MVP at MPL Philippines Season 14, and Finals MVP at the M6 World Championship — the first player in MLBB history to win the award at all three of MOONTON's major tournament tiers. A 100% win rate on Bruno across M6's Grand Final and a Beatrix Finals MVP skin dedicated to his son round out a career defined by precision rather than volume."
+  ],
+  achievements:["MPL Philippines Champion (S14) and Finals MVP, defeating Aurora Gaming in a seven-game final","World Champion (M6) and Finals MVP, defeating Team Liquid ID 4-1","MLBB Mid-Season Cup 2021 Champion and Finals MVP","First player in MLBB history to win Finals MVP at the MPL, MSC, and M-Series level"]
+}
+];
+
+const HONORABLE_MENTIONS_MPLPH = [
+  {
+    name:"Ribo", photo:"assets/players/ribo.jpg", team:"Aether Main / Bren Esports", tag:"MPL PH's Original GOAT · Hall of Legends Inductee",
+    color:"#0038A8",
+    hook:"The player the Philippine scene called \"the GOAT\" before the term meant anything else — the league's very first champion, and part of its first World Championship-winning roster three years later.",
+    accomplishments:[
+      "2x MPL Philippines Champion (S1 with Aether Main, S6 with Bren Esports)",
+      "MLBB Southeast Asia Cup (MSC) 2018 Champion",
+      "World Champion (M2, 2021)",
+      "SEA Games Gold Medalist (2019)",
+      "MPL Philippines Season 1 Finals MVP",
+      "MPL Philippines Hall of Legends inductee"
+    ],
+    storyline:"Ribo won MPL Philippines' very first title with Aether Main in 2018, stuck around as the roster became Bren Esports, and was still there for the Season 6 title and the M2 World Championship in 2021 — a career that quite literally spans the league's entire founding era.",
+    whyNotCut:"This is the closest call on the entire list. Ribo's trophy count (two domestic titles plus MSC 2018, M2, and a SEA Games gold) is arguably deeper than Kelra's, and his legacy as the scene's original \"GOAT\" carries real historical weight. What tips it to Kelra is individual hardware: Ribo has one Finals MVP (domestic, Season 1), where Kelra has three — at three different tournament tiers, a feat no one in MLBB history has matched. Reasonable fans would swap these two without much argument."
+  },
+  {
+    name:"Sanford", photo:"assets/players/sanford.jpg", team:"ECHO Philippines / Team Liquid PH", tag:"M4 Champion · MSC 2025 Finals MVP",
+    color:"#0038A8",
+    hook:"Part of ECHO's M4-winning core, then part of Team Liquid PH's MSC 2025 championship roster years later — picking up a Finals MVP of his own along the way.",
+    accomplishments:[
+      "World Champion (M4, 2023, with ECHO Philippines)",
+      "MLBB Mid-Season Cup 2025 Champion and Finals MVP (with Team Liquid PH)",
+      "Multiple MPL Philippines titles across two organizations"
+    ],
+    storyline:"Sanford was part of the ECHO roster — alongside KarlTzy, Bennyqt, Sanji, and Yawi — that swept Blacklist International 4-0 to win M4, then resurfaced years later on Team Liquid PH's MSC 2025 title-winning roster, this time as the Finals MVP himself.",
+    whyNotCut:"A genuinely strong résumé across two different championship eras, but it's built on fewer confirmed MPL Philippines domestic titles than the players ranked above him, and the M4 title is shared credit on a roster where Bennyqt took the Finals MVP spotlight."
+  },
+  {
+    name:"Sanji", photo:"assets/players/sanji.jpg", team:"ECHO Philippines / Team Liquid PH", tag:"M4 Champion · MSC 2025 Champion",
+    color:"#0038A8",
+    hook:"Another member of ECHO's M4-winning core who resurfaced on Team Liquid PH's MSC 2025 championship roster, with a Season 15 Finals MVP of his own along the way.",
+    accomplishments:[
+      "World Champion (M4, 2023, with ECHO Philippines)",
+      "MLBB Mid-Season Cup 2025 Champion (with Team Liquid PH)",
+      "MPL Philippines Season 15 Finals MVP"
+    ],
+    storyline:"Sanji was part of the same ECHO core as Sanford and Bennyqt that won M4 in a 4-0 sweep of Blacklist International, then went on to collect a Season 15 Finals MVP and an MSC 2025 championship in a later chapter of his career with Team Liquid PH.",
+    whyNotCut:"Real international and domestic hardware, but spread across shared-credit team wins rather than the kind of singular, hard-to-replicate individual feat that defines the back half of this top ten."
+  }
+];
+
 const GRADE_COLOR = g => {
   if(!g) return "var(--b)";
   const l = g[0];
@@ -1303,6 +1573,20 @@ const RANKINGS = [
     heading:"The Top 10 <span class=\"gold\">MLBB</span><br>Players of<br>All Time",
     eyebrow:"MLBB · World Champions First",
     intro:"Every world champion from M1 through M7 was considered, with world titles weighed first. Honorable mentions get full credit for their hardware. Scroll through the full countdown below, or jump to a player."
+  }
+  ,{
+    id:"mpl-ph-all-time",
+    badge:"MPL Philippines · Est. 2018",
+    title:"Top 10 MPL Philippines Players of All Time",
+    blurb:"A ranked, graded breakdown of the ten greatest MPL Philippines players ever — weighted across domestic titles, international World Championship results, career longevity, and individual awards.",
+    meta:"10 ranked · 3 honorable mentions · Seasons 1–18",
+    players:PLAYERS_MPLPH, honorable:HONORABLE_MENTIONS_MPLPH,
+    criteria:[["domestic","Domestic Titles"],["international","International"],["longevity","Longevity"],["individual","Individual"]],
+    metaRow:[["Most Titles","KarlTzy (6)"],["Most World Titles, 2 Orgs","KarlTzy & Edward"],["First 3-Peat Org","Team Liquid PH (S15–S17)"],["Triple Finals MVP","Kelra — MPL, MSC & M-Series"]],
+    method:[["DOMESTIC TITLES","MPL Philippines championships and Finals appearances."],["INTERNATIONAL RESULTS","M-Series, MSC, and SEA Games results."],["LONGEVITY","Career length and sustained relevance across eras."],["INDIVIDUAL AWARDS","MVPs, Finals MVPs, and individual hardware earned."]],
+    heading:"Top 10 MPL<br>Philippines Players<br>of All Time",
+    eyebrow:"MPL Philippines · All-Time Ranking",
+    intro:"Built from Seasons 1 through 18, plus every M-Series, MSC, and SEA Games appearance along the way — the Philippines' companion list to the MPL Indonesia all-time ranking. Scroll through the full countdown below, or jump to a player."
   }
 ];
 
@@ -1411,7 +1695,7 @@ function renderHome(){
     <section class="hero">
       <div class="eyebrow">✦ ARENA TEN ✦</div>
       <h1 class="display">All-Time Rankings,<br>One <span class="gold">Growing</span> Archive</h1>
-      <p class="hub-intro">Sourced, graded, argued-over rankings of esports and competitive gaming's greatest players — one region, one game, one era at a time. Three lists live right now, more on the way.</p>
+      <p class="hub-intro">Sourced, graded, argued-over rankings of esports and competitive gaming's greatest players — one region, one game, one era at a time. Four lists live right now, more on the way.</p>
       <div class="home-cta-row">
         <a href="#/rankings" class="btn solid">Browse All Rankings</a>
         <a href="#/about" class="btn">How We Grade</a>
@@ -1478,7 +1762,7 @@ function renderAbout(){
     <div class="about-block">
       <h2>WHAT WE DO</h2>
       <p>Every list on Arena Ten is built the same way: pick a scope, define the criteria up front, grade every player against those criteria, and publish the full reasoning — including who almost made the cut and why they didn't. We're not an official league or publisher; grades reflect editorial judgment based on publicly documented achievements, not official league scoring.</p>
-      <p>We run three lists. Two cover MPL Indonesia and are built on purpose to disagree with each other: an all-time ranking that weighs international results (M-Series, MSC) alongside domestic play, and a "Domestic Legacy" ranking that scores MPL Indonesia achievements only. Same player pool, different math, different order. The third, \"The Top 10 MLBB Players of All Time,\" looks across every region and puts world championships first.</p>
+      <p>We run four lists. Two cover MPL Indonesia and are built on purpose to disagree with each other: an all-time ranking that weighs international results (M-Series, MSC) alongside domestic play, and a "Domestic Legacy" ranking that scores MPL Indonesia achievements only. Same player pool, different math, different order. The third, \"The Top 10 MLBB Players of All Time,\" looks across every region and puts world championships first. The fourth, \"Top 10 MPL Philippines Players of All Time,\" is the Philippines' companion to the original MPL Indonesia all-time list, built the same way.</p>
     </div>
 
     <div class="about-block">
@@ -1519,7 +1803,7 @@ function renderContact(){
         <label for="c-message">Message</label>
         <textarea id="c-message" placeholder="Tell us what you found, or what list you'd like to see next..."></textarea>
         <div class="home-cta-row" style="margin-top:20px;">
-          <a href="mailto:hello@arenaten.example?subject=Arena%20Ten%20Contact" class="btn solid">Send via Email</a>
+          <a href="mailto:hello@arenaten.example?subject=Arena%20Ten%20Contact" id="contactSendBtn" class="btn solid" onclick="return buildContactMailto(this)">Send via Email</a>
         </div>
       </div>
       <div class="contact-side">
@@ -1600,7 +1884,10 @@ function renderPlayerBlock(p, ranking, isLast){
 
 function renderRankingPage(id){
   const ranking = RANKINGS.find(r=>r.id===id);
-  if(!ranking) return `<div style="padding:80px 0;">Ranking not found. <a href="#/rankings" style="color:var(--gold);">Back to Rankings →</a></div>`;
+  if(!ranking){
+    setMeta("Ranking not found — Arena Ten", "This ranking doesn't exist or may have been moved. Browse all current rankings on Arena Ten.");
+    return `<div style="padding:80px 0;">Ranking not found. <a href="#/rankings" style="color:var(--gold);">Back to Rankings →</a></div>`;
+  }
 
   setMeta(ranking.title + " | Arena Ten", ranking.blurb);
   const list = ranking.players.slice().sort((a,b)=>a.rank-b.rank);
@@ -1672,6 +1959,30 @@ function renderRankingPage(id){
   `;
 }
 
+function buildContactMailto(link){
+  // The contact "form" is really a mailto link with no server behind it, so
+  // without this the browser opens an empty email no matter what the person
+  // typed. Build the subject/body from the actual field values right before
+  // the click is allowed to follow the link.
+  const val = id => (document.getElementById(id)?.value || "").trim();
+  const name = val("c-name");
+  const email = val("c-email");
+  const subjectField = val("c-subject");
+  const message = val("c-message");
+
+  const subject = subjectField || "Arena Ten Contact";
+  const bodyLines = [];
+  if(name) bodyLines.push("Name: " + name);
+  if(email) bodyLines.push("Email: " + email);
+  if(message){ bodyLines.push(""); bodyLines.push(message); }
+  const body = bodyLines.join("\n");
+
+  let url = "mailto:hello@arenaten.example?subject=" + encodeURIComponent(subject);
+  if(body) url += "&body=" + encodeURIComponent(body);
+  link.setAttribute("href", url);
+  return true; // let the click proceed to the now-updated href
+}
+
 function setMeta(title, desc){
   document.title = title;
   const descTag = document.querySelector('meta[name="description"]');
@@ -1701,6 +2012,11 @@ function closeMobileSidebar(){
   }
 }
 
+// Single source of truth for which hashes are real routes (vs. in-page
+// anchors). Both the router's early-return guard and its render dispatch
+// read from this, so adding/removing a route can't let the two drift apart.
+const ROUTES = new Set(["", "rankings", "news", "about", "contact"]);
+
 function router(){
   const hash = location.hash || "#/";
 
@@ -1708,7 +2024,7 @@ function router(){
   // reached via a jump-link or a deep link) should be left to the browser's
   // native anchor scrolling — re-rendering here would wipe the player's
   // scroll position (e.g. after a back-button navigation).
-  const isRoute = /^#\/($|rankings$|news$|about$|contact$|ranking\/)/.test(hash);
+  const isRoute = hash.startsWith("#/ranking/") || ROUTES.has(hash.replace(/^#\//, "").replace(/\/$/, ""));
   if(!isRoute){
     checkBackToTop();
     return;
@@ -1716,22 +2032,23 @@ function router(){
 
   const app = document.getElementById("app");
   const rankingMatch = hash.match(/^#\/ranking\/([a-z0-9-]+)/);
+  const route = hash.replace(/^#\//, "").replace(/\/$/, "");
 
   closeMobileSidebar();
 
   if(rankingMatch){
     app.innerHTML = renderRankingPage(rankingMatch[1]);
     setActiveNav("rankings");
-  } else if(hash === "#/rankings"){
+  } else if(route === "rankings"){
     app.innerHTML = renderRankingsHub();
     setActiveNav("rankings");
-  } else if(hash === "#/news"){
+  } else if(route === "news"){
     app.innerHTML = renderNews();
     setActiveNav("news");
-  } else if(hash === "#/about"){
+  } else if(route === "about"){
     app.innerHTML = renderAbout();
     setActiveNav("about");
-  } else if(hash === "#/contact"){
+  } else if(route === "contact"){
     app.innerHTML = renderContact();
     setActiveNav("contact");
   } else {
@@ -1744,25 +2061,43 @@ function router(){
   // users land somewhere sensible after a route change.
   app.setAttribute("tabindex", "-1");
   app.focus({preventScroll:true});
-  checkBackToTop();
+  setupBackToTop(); // re-attach the observer to the new .list element, if any
 }
 window.addEventListener("hashchange", router);
+
+let backToTopObserver = null;
+
+// On ranking pages, show the back-to-top button once the quick-list (top 10
+// jump list) has scrolled fully out of view — i.e. we've entered the player
+// profiles. An IntersectionObserver is used instead of a fixed pixel
+// threshold so this works correctly on any viewport height (a fixed
+// "scrollY > 600" threshold could simply never fire on a short phone-in-
+// landscape viewport where the list never needs that much scrolling).
+function setupBackToTop(){
+  const btn = document.getElementById("backToTop");
+  if(!btn) return;
+  if(backToTopObserver){ backToTopObserver.disconnect(); backToTopObserver = null; }
+
+  const listEl = document.querySelector(".list");
+  if(listEl && "IntersectionObserver" in window){
+    backToTopObserver = new IntersectionObserver((entries) => {
+      const entry = entries[0];
+      const scrolledPast = !entry.isIntersecting && entry.boundingClientRect.bottom < 0;
+      btn.classList.toggle("show", scrolledPast);
+    }, {threshold: 0});
+    backToTopObserver.observe(listEl);
+  } else {
+    // No quick-list on this page (Home/News/About/Contact), or no
+    // IntersectionObserver support — fall back to a simple scroll distance.
+    checkBackToTop();
+  }
+}
 
 function checkBackToTop(){
   const btn = document.getElementById("backToTop");
   if(!btn) return;
-  const listEl = document.querySelector(".list");
-  let show;
-  if(listEl){
-    // Require BOTH a minimum scroll distance and being past the quick-list,
-    // whichever threshold is reached later — so scrolling back up just past
-    // the list boundary (while still deep in the page) doesn't abruptly
-    // hide the button.
-    show = window.scrollY > 600 && listEl.getBoundingClientRect().bottom < 0;
-  } else {
-    show = window.scrollY > 700;
-  }
-  btn.classList.toggle("show", show);
+  if(document.querySelector(".list") && backToTopObserver) return; // handled by the observer instead
+  btn.classList.toggle("show", window.scrollY > 700);
 }
 
 function toggleSidebar(){
@@ -1823,7 +2158,6 @@ window.addEventListener("DOMContentLoaded", () => {
     });
   }
   window.addEventListener("scroll", checkBackToTop, {passive:true});
-  checkBackToTop();
 });
 </script>
 </body>
